@@ -1,0 +1,629 @@
+2017-12-02 15:05:19	default	the_fine_man (~the_fine_@95.76.56.90) has joined #archlinux
+2017-12-02 15:05:19	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: https://ptpb.pw https://gist.github.com https://bpaste.net | Become an official Arch Tester: https://goo.gl/48qpvG | FF is in [extra] now: -Syu"
+2017-12-02 15:05:19	--	Topic set by phrik (phrik@archlinux/bot/phrik) on Wed, 15 Nov 2017 16:14:43
+2017-12-02 15:05:20	--	Channel #archlinux: 1759 nicks (2 ops, 0 voices, 1757 normals)
+2017-12-02 15:05:21	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2017-12-02 15:05:35	default	polarfire (~polarfire@d58c56cf.rev.dansknet.dk) has joined #archlinux
+2017-12-02 15:06:14	<--	therue (~therue@1-162-71-6.dynamic-ip.hinet.net) has quit (Quit: Leaving)
+2017-12-02 15:06:23	oprypin	huh this is really bad that people don't have xdg-utils by default
+2017-12-02 15:06:42	oprypin	the last bastion for it is as a dependency of 'chromium' or 'qt4'
+2017-12-02 15:06:56	oprypin	i thought every modern system would have it
+2017-12-02 15:07:33	default	therue (~therue@1-162-71-6.dynamic-ip.hinet.net) has joined #archlinux
+2017-12-02 15:07:55	oprypin	i'd add it as a dependency of something,  like kde-cli-tools
+2017-12-02 15:08:09	<--	therue (~therue@1-162-71-6.dynamic-ip.hinet.net) has quit (Client Quit)
+2017-12-02 15:08:24	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Quit: AtomicIRC: The nuclear option.)
+2017-12-02 15:08:38	default	natrys (~natrys@180.234.28.165) has joined #archlinux
+2017-12-02 15:08:53	<--	jceb (~jceb@p200300E81BD7FE00D1F15D05D0751DDA.dip0.t-ipconnect.de) has quit (Ping timeout: 258 seconds)
+2017-12-02 15:08:54	default	therue (~therue@1-162-71-6.dynamic-ip.hinet.net) has joined #archlinux
+2017-12-02 15:08:59	mongy	https://ptpb.pw/IIu- muh 'new' lappy 
+2017-12-02 15:09:32	mongy	lucky I don't need a gui on it.  
+2017-12-02 15:09:34	default	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has joined #archlinux
+2017-12-02 15:10:01	heisenberg	where did you get that "powered by arch" sticker ? :O
+2017-12-02 15:10:35	mongy	person who gave me it.. was already on it lol
+2017-12-02 15:10:53	heisenberg	oprypin are you sure ? I trust devs, if it's not installed by default, it shouldn't be probably :D
+2017-12-02 15:11:08	oprypin	heisenberg, no this is the case where you shouldn't trust devs
+2017-12-02 15:11:16	default	earnestly (~Earnestly@unaffiliated/earnestly) has joined #archlinux
+2017-12-02 15:11:16	heisenberg	for example that url, gwenview instead of firefox :O
+2017-12-02 15:11:18	oprypin	i mean  x11 is not installed by default so i dunno
+2017-12-02 15:11:44	<--	arecaceae (~root@gateway/vpn/privateinternetaccess/arecaceae) has quit (Remote host closed the connection)
+2017-12-02 15:11:54	<--	nightfeather (~nightfeat@210.209.211.66) has quit (Quit: leaving)
+2017-12-02 15:12:03	default	arecaceae (~root@gateway/vpn/privateinternetaccess/arecaceae) has joined #archlinux
+2017-12-02 15:13:09	default	frenchbeard (~Nope@eth-east-parth2-46-193-65-67.wb.wifirst.net) has joined #archlinux
+2017-12-02 15:13:39	<--	sadmansk (~Thunderbi@toroon0335w-lp130-01-142-112-177-122.dsl.bell.ca) has quit (Remote host closed the connection)
+2017-12-02 15:13:47	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:13:47	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:14:04	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:14:04	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:14:21	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:14:21	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:14:47	default	Alakzadeh (~alakie@gateway/tor-sasl/alakzadeh) has joined #archlinux
+2017-12-02 15:15:07	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:15:07	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:15:35	heisenberg	should I install xdg-utils ?
+2017-12-02 15:15:54	heisenberg	xdg-portal-desktop-kde is already installed
+2017-12-02 15:16:09	default	zero_note (~zero@2-238-74-201.ip242.fastwebnet.it) has joined #archlinux
+2017-12-02 15:16:26	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:16:26	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:16:33	default	marshal0505 (~marshal05@trivialand/elite/marshal0505) has joined #archlinux
+2017-12-02 15:16:34	--	lethu_ is now known as lethu
+2017-12-02 15:17:14	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:17:15	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:17:21	<--	frenchbeard (~Nope@eth-east-parth2-46-193-65-67.wb.wifirst.net) has quit (Ping timeout: 248 seconds)
+2017-12-02 15:17:26	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:17:27	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:17:37	<--	agjacome (~agjacome@139.47.29.114) has quit (Quit: leaving)
+2017-12-02 15:17:38	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:17:39	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:17:56	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:17:57	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:18:06	<--	kixem (~kixem@2a02:587:6e1b:fc00:31d5:235f:a605:9e0f) has quit (Ping timeout: 260 seconds)
+2017-12-02 15:18:09	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:18:10	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:18:25	oprypin	yes, install xdg-utils 
+2017-12-02 15:18:30	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:18:30	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:18:36	<--	zero_note (~zero@2-238-74-201.ip242.fastwebnet.it) has quit (Client Quit)
+2017-12-02 15:18:42	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:18:42	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:18:46	default	vin1290 (~vin1290@111.95.45.104) has joined #archlinux
+2017-12-02 15:18:54	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:18:54	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:19:04	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:19:05	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:19:27	<--	ToffeeYogurtPots (~ToffeeYog@gateway/tor-sasl/toffeeyogurtpots) has quit (Remote host closed the connection)
+2017-12-02 15:19:50	<--	iZaq (~iZaq@91.99.235.204) has quit (Quit: iZaq)
+2017-12-02 15:19:59	<--	a_charming_man (~acm@gateway/tor-sasl/acharmingman/x-01847091) has quit (Remote host closed the connection)
+2017-12-02 15:20:08	<--	petervaro_ (~petervaro@jh149.perfectdeals.xyz) has quit (Quit: WeeChat 1.9.1)
+2017-12-02 15:20:17	mongy	b43-firmware has slightly higher latency (pings test) than b43-firmware-classic.  will stick to classic
+2017-12-02 15:20:20	default	a_charming_man (~acm@gateway/tor-sasl/acharmingman/x-01847091) has joined #archlinux
+2017-12-02 15:20:39	default	brethil_ (~brethil@unaffiliated/brethil) has joined #archlinux
+2017-12-02 15:20:44	watered	https://bpaste.net/show/9ba18b901540
+2017-12-02 15:20:46	@phrik	Title: show at bpaste (at bpaste.net)
+2017-12-02 15:20:53	watered	how to solve the bind error?
+2017-12-02 15:21:41	heisenberg	also, how can I "promote" a package that was installed automatically as a dependence by another package, as "independent" ?
+2017-12-02 15:21:57	MrElendig	heisenberg: man pacman, see what -D does
+2017-12-02 15:22:42	<--	brethil (~brethil@unaffiliated/brethil) has quit (Ping timeout: 240 seconds)
+2017-12-02 15:23:17	heisenberg	MrElendig so pacman -D <packagename/group> ??
+2017-12-02 15:23:44	<--	lajaybird (~jaybird@utdpat241123.utdallas.edu) has quit (Ping timeout: 248 seconds)
+2017-12-02 15:23:56	oprypin	probably  pacman -D --asexplicit  but im just reading the --help
+2017-12-02 15:23:59	heisenberg	prypin xdg-open /tmp uses dolphin as well
+2017-12-02 15:24:20	oprypin	heisenberg, uh good, now restart that appication you were using and it'll probably use dolphin
+2017-12-02 15:25:01	<--	bigeast (~bigeast@unaffiliated/bigeast) has quit (Ping timeout: 240 seconds)
+2017-12-02 15:25:58	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:26:03	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:26:17	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:26:18	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:26:27	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:26:27	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:26:33	<--	ayjay_t (ajp@71-88-60-246.static.nwtn.ct.charter.com) has quit (Quit: leaving)
+2017-12-02 15:26:40	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:26:41	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:26:50	heisenberg	that application doesn't run anymore lol
+2017-12-02 15:27:17	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:27:17	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:27:24	<--	fatigue (uid234588@gateway/web/irccloud.com/x-tzycrccuzbmqgkdb) has quit (Quit: Connection closed for inactivity)
+2017-12-02 15:27:36	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:27:37	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:27:37	default	sha512sum (~sha512sum@gateway/tor-sasl/sha512sum) has joined #archlinux
+2017-12-02 15:28:09	oprypin	I really take issue with  plasma-meta  not installing xdg-open.
+2017-12-02 15:28:50	<--	fireion (fireion@nat/iiit/x-nhquxbnhscecwoeu) has quit (Ping timeout: 260 seconds)
+2017-12-02 15:29:12	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:30:07	heisenberg	had to kill it manually, but now it works btw!
+2017-12-02 15:30:11	heisenberg	Thanks ^_^
+2017-12-02 15:32:20	--	piie is now known as piiE
+2017-12-02 15:32:23	default	dreamfighter (~dreamfigh@unaffiliated/dreamfighter) has joined #archlinux
+2017-12-02 15:32:24	default	borkr (~borkr@static130-244.mimer.net) has joined #archlinux
+2017-12-02 15:33:15	default	jimgray (~weechat@gateway/tor-sasl/jimgray) has joined #archlinux
+2017-12-02 15:33:24	default	snql_ (~snql@unaffiliated/snql) has joined #archlinux
+2017-12-02 15:34:05	default	Repentinus (~repentinu@fsfe/repentinus) has joined #archlinux
+2017-12-02 15:34:12	--	piiE is now known as piie
+2017-12-02 15:34:45	jimgray	'xrandr --output VGA-1 --mode 1368x768' in .xinitrc does NOT take effect.
+2017-12-02 15:35:08	jimgray	But if I run it after awesome startup, it's OK.
+2017-12-02 15:35:15	ius	I'm trying to turn off my PCIe GPU (AMD) - laptop users with 'hybrid graphics' seem to use acpi_call
+2017-12-02 15:35:24	smlb	jimgray: xrandr -d :0.0 --output foobar ?
+2017-12-02 15:35:29	ius	Would something like that work on 'regular' machines?
+2017-12-02 15:35:48	smlb	just make sure your $DISPLAY is that doing `echo $DISPLAY`
+2017-12-02 15:35:59	<--	snql (~snql@unaffiliated/snql) has quit (Ping timeout: 248 seconds)
+2017-12-02 15:36:04	jimgray	smlb: ha, it's Arch Linux in VirtualBox. xrandr prints 'VGA-1'
+2017-12-02 15:36:36	<--	GrimKriegor (~GrimKrieg@a79-168-187-213.cpe.netcabo.pt) has quit (Read error: Connection reset by peer)
+2017-12-02 15:36:39	jimgray	echo $DISPLAY prints  <:0>
+2017-12-02 15:36:45	MrElendig	heisenberg: you ignored the "man pacman" bit :p
+2017-12-02 15:36:46	<--	Chais (~Chais@unaffiliated/chais) has quit (Quit: ZNC 1.6.5 - http://znc.in)
+2017-12-02 15:36:55	default	ahi2 (~ahi2@75-161-111-72.albq.qwest.net) has joined #archlinux
+2017-12-02 15:36:58	smlb	so, try to use `-d :0` before the `--output` part
+2017-12-02 15:37:03	default	kixem (~kixem@2a02:587:6e1b:fc00:31d5:235f:a605:9e0f) has joined #archlinux
+2017-12-02 15:38:46	<--	Raed|Laptop (~Raed@2601:18c:8601:c7e9:262:406e:319c:7768) has quit (Ping timeout: 264 seconds)
+2017-12-02 15:39:01	default	Chais (~Chais@unaffiliated/chais) has joined #archlinux
+2017-12-02 15:39:07	jimgray	smlb: still no effect.
+2017-12-02 15:39:24	jimgray	But I can use that after awesome launches.
+2017-12-02 15:39:38	MrElendig	jimgray: which wm/de?
+2017-12-02 15:39:43	Namarrgon	post your xinitrc
+2017-12-02 15:39:49	jimgray	MrElendig: awesome
+2017-12-02 15:40:12	default	kaben2 (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:40:12	<--	kaben2 (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:40:36	jimgray	Namarrgon: https://paste.pound-python.org/show/G14eSpqzugsWW3xueHrA/
+2017-12-02 15:40:38	@phrik	Title: Paste #G14eSpqzugsWW3xueHrA at spacepaste (at paste.pound-python.org)
+2017-12-02 15:40:42	smlb	is xrandr BEFORE `exec`?
+2017-12-02 15:40:57	jimgray	It's almost the default xinitrc except the last few lines.
+2017-12-02 15:40:59	default	kaben2 (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:40:59	<--	kaben2 (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:41:00	<--	Icedman (~Icedman@unaffiliated/icedman) has quit (Quit: WeeChat 1.9.1)
+2017-12-02 15:41:01	jimgray	smlb: yeah
+2017-12-02 15:41:05	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Ping timeout: 240 seconds)
+2017-12-02 15:41:14	ashkitten	is there an equivalent to bsd's /dev/rdisk in linux?
+2017-12-02 15:41:47	default	jusss (~user@unaffiliated/jusss) has joined #archlinux
+2017-12-02 15:42:10	jimgray	smlb: I just fond a line from wiki:   Note that some programs should instead not be forked, to avoid race bugs, as is the case of xrdb.
+2017-12-02 15:42:15	default	python476 (~user@mfl93-6-88-169-195-97.fbx.proxad.net) has joined #archlinux
+2017-12-02 15:42:15	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:42:15	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:42:22	<--	kixem (~kixem@2a02:587:6e1b:fc00:31d5:235f:a605:9e0f) has quit (Ping timeout: 260 seconds)
+2017-12-02 15:42:29	jimgray	Dunno if that tells something
+2017-12-02 15:42:41	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:42:42	smlb	can you try using a clean .xinitrc?
+2017-12-02 15:42:50	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:42:55	smlb	i mean with just xrandr and the exec 
+2017-12-02 15:43:24	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:43:24	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:43:36	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:43:36	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:43:51	default	binaryTraveller (~binaryTra@27.5.35.17) has joined #archlinux
+2017-12-02 15:44:23	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:44:23	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:44:34	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:44:34	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:44:36	jimgray	smlb: do you mean the default /etc/X11/xinit/xinitrc?
+2017-12-02 15:44:45	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:44:45	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:45:17	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:45:17	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:45:23	default	ToffeeYogurtPots (~ToffeeYog@gateway/tor-sasl/toffeeyogurtpots) has joined #archlinux
+2017-12-02 15:45:29	jimgray	smlb: ha, let me try
+2017-12-02 15:45:42	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:45:42	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:45:59	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:45:59	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:46:07	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:46:07	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:46:30	<--	chaosruler (~chaosrule@unaffiliated/chaosruler) has quit (Quit: Leaving)
+2017-12-02 15:46:59	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:46:59	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:47:09	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:47:10	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:47:18	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:47:18	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:47:30	jimgray	smlb: still no luck :)
+2017-12-02 15:47:58	jusss	why this doesn't work?  sudo ext4magic /dev/sda10 -r -f john/Market/  -b $(date +%s) -d /bla2/
+2017-12-02 15:48:06	jusss	/home/john/Market  is /dev/sda10
+2017-12-02 15:48:08	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:48:08	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:48:11	default	chaosruler (~chaosrule@unaffiliated/chaosruler) has joined #archlinux
+2017-12-02 15:48:14	jusss	I want recovery all deleted file in /home/john/Maret to /bla2
+2017-12-02 15:48:27	<--	luckman212 (~luckman21@unaffiliated/luckman212) has quit (Ping timeout: 240 seconds)
+2017-12-02 15:48:32	earnestly	jusss: ... search next time: https://wiki.archlinux.org/index.php/File_recovery
+2017-12-02 15:48:33	@phrik	Title: File recovery - ArchWiki (at wiki.archlinux.org)
+2017-12-02 15:48:39	<--	qewzee (mojo@51.255.42.27) has quit (Quit: ZNC 1.6.5 - http://znc.in)
+2017-12-02 15:48:57	grawity	earnestly: also, as it turns out, ARIN indeed requires the applicant to be an organization of some kind
+2017-12-02 15:49:09	<--	SpinTensor (~SpinTenso@i577A2977.versanet.de) has quit (Quit: WeeChat 1.9.1)
+2017-12-02 15:49:40	earnestly	grawity: I would have said that it wasn't unexpected but then I'm starting to grasp for reasons why outside of "contact"
+2017-12-02 15:49:52	earnestly	I guess just old ways of doing things
+2017-12-02 15:50:04	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:50:08	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:50:30	grawity	ashkitten: what's the difference between disk and rdisk?
+2017-12-02 15:50:40	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:50:41	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:50:47	grawity	earnestly: they're in general the most bureaucratic
+2017-12-02 15:51:31	ashkitten	grawity: rdisk is a raw device, unbuffered. i figured it out though, you have to use the O_DIRECT flag
+2017-12-02 15:51:35	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:51:36	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:51:58	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:51:59	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:52:14	default	Xorg (~xo@212.39.106.98) has joined #archlinux
+2017-12-02 15:52:54	grawity	I remember something about Linus specifically refusing to add "raw block devices", but yeah, probably O_DIRECT or O_DIRECT|O_SYNC
+2017-12-02 15:53:12	<--	sklv (~sklv@gateway/tor-sasl/sklv) has quit (Quit: quit)
+2017-12-02 15:53:14	default	vuoto (~vuoto@80.71.142.118) has joined #archlinux
+2017-12-02 15:53:34	grawity	raw(8) confirms that
+2017-12-02 15:53:41	ashkitten	grawity: i think there used to be raw block devices, but they were deprecated a long time ago
+2017-12-02 15:53:58	default	luckman212 (~luckman21@unaffiliated/luckman212) has joined #archlinux
+2017-12-02 15:53:58	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:53:59	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:54:15	grawity	were they useful though
+2017-12-02 15:54:15	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:54:16	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:54:19	<--	Reporting4Booty (~Reporting@host198-2.natpool.mwn.de) has quit (Remote host closed the connection)
+2017-12-02 15:54:19	<--	heisenberg (~heisenber@212.66.123.252) has quit (Quit: leaving)
+2017-12-02 15:54:33	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:54:34	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:54:50	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:54:51	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:54:58	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:54:59	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:55:29	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:55:30	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:55:47	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:55:48	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:56:00	ashkitten	i'm not sure exactly what the use case is, i'm asking for a friend
+2017-12-02 15:56:05	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:56:05	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:56:32	<--	ahi2 (~ahi2@75-161-111-72.albq.qwest.net) has quit (Quit: Leaving)
+2017-12-02 15:56:34	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:56:34	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:56:50	default	bigeast (~bigeast@unaffiliated/bigeast) has joined #archlinux
+2017-12-02 15:57:26	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:57:26	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:57:33	default	lusid_fait (~fire_agat@pool-71-179-244-96.bltmmd.fios.verizon.net) has joined #archlinux
+2017-12-02 15:58:26	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:58:26	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 15:59:00	<--	vin1290 (~vin1290@111.95.45.104) has quit (Read error: Connection reset by peer)
+2017-12-02 15:59:01	<--	python476 (~user@mfl93-6-88-169-195-97.fbx.proxad.net) has quit (Read error: Connection reset by peer)
+2017-12-02 15:59:35	<--	chap (~chap@unaffiliated/chap) has quit (Ping timeout: 240 seconds)
+2017-12-02 15:59:56	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 15:59:56	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 16:00:22	gamehelp16	anyone knows how to make symbols like ? appear on urxvt?
+2017-12-02 16:00:23	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 16:00:24	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 16:00:31	gamehelp16	it shows as a square for me
+2017-12-02 16:01:10	<--	irreleph4nt (~irrelevan@b2b-78-94-14-198.unitymedia.biz) has quit (Quit: Leaving)
+2017-12-02 16:01:12	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 16:01:13	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 16:01:22	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 16:01:23	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 16:01:35	<--	pauper (~pauper@201.179.242.64) has quit (Ping timeout: 240 seconds)
+2017-12-02 16:01:35	<--	Pupnik (~Pupnik@2001:44b8:41c4:ba00:de4b:12fa:8add:639a) has quit (Remote host closed the connection)
+2017-12-02 16:01:38	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 16:01:39	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 16:01:49	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 16:01:50	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 16:01:59	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 16:02:00	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 16:02:23	<--	TSPenguin (~Knecht@85.27.184.98) has quit (Quit: left)
+2017-12-02 16:02:32	default	karmahacker (~karmahack@unaffiliated/karmahacker) has joined #archlinux
+2017-12-02 16:02:47	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 16:02:47	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 16:02:57	default	flacks (~jean@unaffiliated/flacks) has joined #archlinux
+2017-12-02 16:03:05	<--	nomeeed (~nomeed@p579CEF4E.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2017-12-02 16:03:10	default	motersen (~user@95.157.8.207) has joined #archlinux
+2017-12-02 16:03:43	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 16:03:43	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 16:03:46	flacks	hi, anyone have an ETA on the new version of `synergy` in the community repo?
+2017-12-02 16:03:52	ashkitten	you'd need fallback font support for that, which as far as i remember is not a urxvt feature
+2017-12-02 16:03:53	Khorne	16 years
+2017-12-02 16:03:57	<--	motersen (~user@95.157.8.207) has quit (Client Quit)
+2017-12-02 16:04:07	flacks	or if someone has a pkgbuild for it lying around, would also be nice :)
+2017-12-02 16:04:13	Khorne	Write one yourself?
+2017-12-02 16:04:29	flacks	just checking if someone already has it..
+2017-12-02 16:04:41	Khorne	Adapt the existing one :P
+2017-12-02 16:05:07	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 16:05:07	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Client Quit)
+2017-12-02 16:05:09	Khorne	https://git.archlinux.org/svntogit/community.git/tree/trunk/PKGBUILD?h=packages/synergy#n8 heh
+2017-12-02 16:05:10	@phrik	Title: PKGBUILD\trunk - svntogit/community.git - Git clone of the 'community' repository (at git.archlinux.org)
+2017-12-02 16:05:17	ashkitten	gamehelp16: or you could probably patch your font with the characters you want, but it might not work
+2017-12-02 16:05:25	gamehelp16	ashkitten: I thought you can use multiple fonts on urxvt?
+2017-12-02 16:05:30	flacks	plus, from the pkgbuild: # I would just like to take a minute here and state that synergy is some of the worst packaged software ever. They BUNDLE a fucking zip for cryptopp and do not provide an option to use a system-installed version of that library. They change around paths every update and just generally don't seem to care much.
+2017-12-02 16:05:38	flacks	lmao
+2017-12-02 16:05:39	gamehelp16	what font should I take the symbols from anyway?
+2017-12-02 16:05:42	--	garphy`aw is now known as garphy
+2017-12-02 16:05:46	ashkitten	flacks: check the AUR, i think synergy-git is a thing
+2017-12-02 16:06:08	default	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has joined #archlinux
+2017-12-02 16:06:26	ashkitten	gamehelp16: can you? huh.
+2017-12-02 16:06:46	jusss	earnestly: Loading journal descriptors ... Segmentation fault  when I use `sudo extundelete /dev/sda10 --restore-file john/Market/zz
+2017-12-02 16:06:56	default	ertseyhan (~ertseyhan@176.41.106.139) has joined #archlinux
+2017-12-02 16:06:57	<--	karmahacker (~karmahack@unaffiliated/karmahacker) has quit (Ping timeout: 248 seconds)
+2017-12-02 16:07:00	ashkitten	gamehelp16: there's a fc-* command that'll look up characters in your font library, i forget what
+2017-12-02 16:07:11	<--	mkoskar (~mkoskar@unaffiliated/mkoskar) has quit (Ping timeout: 250 seconds)
+2017-12-02 16:07:23	earnestly	jusss: Consider photorec, and if at all possible, use ddrescue to make a clone of the disk and work on that clone instead
+2017-12-02 16:07:26	flacks	ashkitten: nice, didn't even think about that. theres lots going on there, thanks!
+2017-12-02 16:07:52	ashkitten	?
+2017-12-02 16:08:04	default	mtn (~mtn@unaffiliated/mtn) has joined #archlinux
+2017-12-02 16:08:25	ashkitten	flacks: note that i'm pretty sure they removed the GUI from synergy's git repo a while ago, not sure if they're planning to add that back or not
+2017-12-02 16:08:28	<--	arcan1s (~arcanis@archlinux/trusteduser/arcan1s) has quit (Ping timeout: 252 seconds)
+2017-12-02 16:08:29	default	heisenberg (~heisenber@212.66.123.252) has joined #archlinux
+2017-12-02 16:08:37	default	pauper (~pauper@201.179.242.64) has joined #archlinux
+2017-12-02 16:08:50	<--	dorsch (~mj@46.128.254.61.dynamic.cablesurf.de) has quit (Quit: Konversation terminated!)
+2017-12-02 16:09:03	default	dorsch (~mj@46.128.254.61.dynamic.cablesurf.de) has joined #archlinux
+2017-12-02 16:09:33	gamehelp16	ashkitten: I've seen examples where people separated the fonts with comma
+2017-12-02 16:09:41	<--	ertseyhan (~ertseyhan@176.41.106.139) has quit (Quit: leaving)
+2017-12-02 16:10:00	ashkitten	gamehelp16: if it's supported, you can go ahead and try
+2017-12-02 16:10:20	<--	Alakzadeh (~alakie@gateway/tor-sasl/alakzadeh) has quit (Ping timeout: 248 seconds)
+2017-12-02 16:10:49	gamehelp16	ashkitten: which font should I set as the fallback font tho?
+2017-12-02 16:10:49	<--	kameloso (~NaN@2001:41d0:2:80b4::) has quit (Remote host closed the connection)
+2017-12-02 16:10:53	default	Goatman (~WhatdoIty@80.255.6.46) has joined #archlinux
+2017-12-02 16:11:34	ashkitten	gamehelp16: idk, use some fc-* command to figure out what font contains that character
+2017-12-02 16:11:44	<--	Chais (~Chais@unaffiliated/chais) has quit (Ping timeout: 248 seconds)
+2017-12-02 16:11:46	default	motersen (~user@95.157.8.207) has joined #archlinux
+2017-12-02 16:11:50	flacks	ashkitten: np, not afraid of config files. GUIs given me trouble for some time
+2017-12-02 16:11:51	default	wesclemens (~wesclemen@c-71-201-40-243.hsd1.il.comcast.net) has joined #archlinux
+2017-12-02 16:11:52	default	nightfeather (~nightfeat@210-209-211-66.veetime.com) has joined #archlinux
+2017-12-02 16:12:04	default	ChunkzZ (uid233645@gateway/web/irccloud.com/x-xaqspocefhjfoycl) has joined #archlinux
+2017-12-02 16:12:13	default	kameloso (~NaN@2001:41d0:2:80b4::) has joined #archlinux
+2017-12-02 16:12:48	<--	ToffeeYogurtPots (~ToffeeYog@gateway/tor-sasl/toffeeyogurtpots) has quit (Remote host closed the connection)
+2017-12-02 16:13:13	default	ToffeeYogurtPots (~ToffeeYog@gateway/tor-sasl/toffeeyogurtpots) has joined #archlinux
+2017-12-02 16:14:23	default	arcan1s (~arcanis@archlinux/trusteduser/arcan1s) has joined #archlinux
+2017-12-02 16:15:36	<--	motersen (~user@95.157.8.207) has quit (Client Quit)
+2017-12-02 16:15:46	default	asch (~asch@unaffiliated/asch) has joined #archlinux
+2017-12-02 16:16:00	default	motersen (~user@95.157.8.207) has joined #archlinux
+2017-12-02 16:16:22	default	feksclaus (~feksclaus@80-71-131-204.u.parknet.dk) has joined #archlinux
+2017-12-02 16:16:43	default	snowkrash (b273f02a@gateway/web/freenode/ip.178.115.240.42) has joined #archlinux
+2017-12-02 16:18:23	default	aa13q (~aa13q@92.241.113.47) has joined #archlinux
+2017-12-02 16:18:45	default	Chais (~Chais@unaffiliated/chais) has joined #archlinux
+2017-12-02 16:19:00	<--	snowkrash (b273f02a@gateway/web/freenode/ip.178.115.240.42) has quit (Client Quit)
+2017-12-02 16:19:10	<--	sha256sum (~sha512sum@gateway/tor-sasl/sha512sum) has quit (Quit: Leaving)
+2017-12-02 16:19:24	default	snowkrash (b273f02a@gateway/web/cgi-irc/kiwiirc.com/ip.178.115.240.42) has joined #archlinux
+2017-12-02 16:19:31	<--	dreamfighter (~dreamfigh@unaffiliated/dreamfighter) has quit (Ping timeout: 240 seconds)
+2017-12-02 16:19:35	<--	sha512sum (~sha512sum@gateway/tor-sasl/sha512sum) has quit (Quit: Leaving)
+2017-12-02 16:19:51	<--	snowkrash (b273f02a@gateway/web/cgi-irc/kiwiirc.com/ip.178.115.240.42) has left #archlinux
+2017-12-02 16:20:14	grawity	anthraxx: the imap postinstall could be greatly simplified using -subj "/CN=localhost" -out "$cert" -keyout "$cert"
+2017-12-02 16:20:33	default	robotroll (~robotroll@unaffiliated/robotroll) has joined #archlinux
+2017-12-02 16:23:07	default	mkoskar (~mkoskar@unaffiliated/mkoskar) has joined #archlinux
+2017-12-02 16:23:37	default	gb00s (uid99359@gateway/web/irccloud.com/x-istczbkhcwqyfesw) has joined #archlinux
+2017-12-02 16:27:41	default	chowbok (~chowbok@207.181.255.76) has joined #archlinux
+2017-12-02 16:28:23	<--	mongy (~dean@unaffiliated/duffydack) has quit (Quit: leaving)
+2017-12-02 16:29:07	<--	suNooBku (~suNooBku@unaffiliated/sunoobku) has quit (Quit: Screw you guys, I'm going home. ^^)
+2017-12-02 16:31:04	default	madmanwithabox (~madmanwit@223.190.79.175) has joined #archlinux
+2017-12-02 16:32:14	default	emsal (~em@S0106a84e3f452bc3.vc.shawcable.net) has joined #archlinux
+2017-12-02 16:32:56	default	Gathis (~TheBlack@unaffiliated/gathis) has joined #archlinux
+2017-12-02 16:34:09	madmanwithabox	Hey guys. I have /usr/include/python2.7/, but when I cythonize a simple file which prints hello world, and try to compile the cythonized c file, I get the error python.h not found. Any idea? Tried googling, no luck so far
+2017-12-02 16:34:22	default	Evol (~Cof@2804:14c:4383:83b9::3) has joined #archlinux
+2017-12-02 16:35:14	default	babyflakes (uid171740@gateway/web/irccloud.com/x-jjwsjfybryivpnqt) has joined #archlinux
+2017-12-02 16:36:17	<--	kaben (~kaben@gateway/vpn/privateinternetaccess/kaben) has quit (Ping timeout: 248 seconds)
+2017-12-02 16:36:21	default	batch (~batch@unaffiliated/batch) has joined #archlinux
+                                                                                                                                                                                 2017-12-03 14:56:12	default	the_fine_man (~the_fine_@95.76.56.90) has joined #archlinux
+2017-12-03 14:56:12	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: https://ptpb.pw https://gist.github.com https://bpaste.net | Become an official Arch Tester: https://goo.gl/48qpvG | FF is in [extra] now: -Syu"
+2017-12-03 14:56:12	--	Topic set by phrik (phrik@archlinux/bot/phrik) on Wed, 15 Nov 2017 16:14:43
+2017-12-03 14:56:13	--	Channel #archlinux: 1748 nicks (2 ops, 0 voices, 1746 normals)
+2017-12-03 14:56:14	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2017-12-03 14:56:28	default	simka (~simka@188.146.2.250.nat.umts.dynamic.t-mobile.pl) has joined #archlinux
+2017-12-03 14:56:47	<--	chandan (~chandan@122.167.226.108) has quit (Ping timeout: 260 seconds)
+2017-12-03 14:56:51	default	jobsdonn (~jobsdonn@94.234.170.145) has joined #archlinux
+2017-12-03 14:57:13	default	Chais (~Chais@unaffiliated/chais) has joined #archlinux
+2017-12-03 14:57:23	default	heisenberg (~heisenber@212.66.123.252) has joined #archlinux
+2017-12-03 14:57:35	heisenberg	It's still alive !
+2017-12-03 14:57:40	post-factum	indeed
+2017-12-03 14:57:50	Khorne	It adds addtional whitespace in your sentences, it's b0rked.
+2017-12-03 14:57:50	default	AnySomebody (~horst@2a02:8109:13c0:d20:626c:66ff:fed0:aa93) has joined #archlinux
+2017-12-03 14:58:09	<--	Alakzadeh (~alakie@gateway/tor-sasl/alakzadeh) has quit (Quit: Bella ciao!)
+2017-12-03 14:58:12	<--	feksclaus (~feksclaus@80-71-131-204.u.parknet.dk) has left #archlinux
+2017-12-03 14:58:24	heisenberg	it's there any way to automatically display kernel version when choosing boot entry on boot ? (using systemd-boot)
+2017-12-03 14:58:43	Khorne	You are free to automatically manually add it in the config file
+2017-12-03 14:58:49	post-factum	xD
+2017-12-03 14:59:01	heisenberg	Khorne eh ? 
+2017-12-03 14:59:16	default	feksclaus (~feksclaus@80-71-131-204.u.parknet.dk) has joined #archlinux
+2017-12-03 14:59:17	Khorne	(I think if they all have the same title the version gets appended)
+2017-12-03 14:59:41	Khorne	Or is it the filename? I dont remember, something gets added
+2017-12-03 14:59:54	heisenberg	the title is the same, but it doesn't show the version, it shows the filename
+2017-12-03 15:00:20	Khorne	Oh ye, that then, and no, versions arent showing automatically :P
+2017-12-03 15:00:21	default	choki (~weechat@unaffiliated/choki) has joined #archlinux
+2017-12-03 15:00:24	heisenberg	if I remove "version" from .conf, it will simply show the same titles ? really ? :O
+2017-12-03 15:01:21	default	theWildOne (~theWildOn@a95-94-204-232.cpe.netcabo.pt) has joined #archlinux
+2017-12-03 15:01:33	heisenberg	well... I'll just try
+2017-12-03 15:01:51	heisenberg	But I wanted to see the version at boot, arghh!!
+2017-12-03 15:02:19	default	damke (~damke@unaffiliated/damke) has joined #archlinux
+2017-12-03 15:03:07	--	piiE is now known as piie
+2017-12-03 15:03:10	Khorne	Then add it?
+2017-12-03 15:03:32	Khorne	title Arch Linux Mainline 4.15rc1
+2017-12-03 15:03:35	Khorne	Done
+2017-12-03 15:03:41	<--	damke_ (~damke@unaffiliated/damke) has quit (Ping timeout: 240 seconds)
+2017-12-03 15:03:51	heisenberg	ye, but it won't change automatically when I'll update it :p
+2017-12-03 15:03:51	default	DrRobotic (~DrRobotic@unaffiliated/drrobotic) has joined #archlinux
+2017-12-03 15:03:53	Khorne	No
+2017-12-03 15:04:46	heisenberg	sad life
+2017-12-03 15:05:42	Khorne	If you used your own build package you could probably use a post_install line to add it :')
+2017-12-03 15:06:35	default	damke_ (~damke@unaffiliated/damke) has joined #archlinux
+2017-12-03 15:06:50	heisenberg	not skilled enough
+2017-12-03 15:07:28	default	ArchNoob (~ArchNoob@unaffiliated/archnoob) has joined #archlinux
+2017-12-03 15:07:36	Khorne	Also it doesnt really matter
+2017-12-03 15:07:43	teraflops	!sadface
+2017-12-03 15:07:43	@phrik	?
+2017-12-03 15:07:54	feksclaus	exit
+2017-12-03 15:07:57	<--	feksclaus (~feksclaus@80-71-131-204.u.parknet.dk) has quit (Quit: WeeChat 1.9.1)
+2017-12-03 15:08:11	default	agregory (~agregory@cpe-76-182-123-164.nc.res.rr.com) has joined #archlinux
+2017-12-03 15:08:18	default	yohnnyjoe (~yohnnyjoe@c-73-129-2-10.hsd1.dc.comcast.net) has joined #archlinux
+2017-12-03 15:08:48	default	feksclaus (~feksclaus@80-71-131-204.u.parknet.dk) has joined #archlinux
+2017-12-03 15:09:00	post-factum	!grinface
+2017-12-03 15:09:01	@phrik	post-factum: Say what?
+2017-12-03 15:09:01	<--	damke (~damke@unaffiliated/damke) has quit (Ping timeout: 240 seconds)
+2017-12-03 15:09:09	default	robotroll (~robotroll@unaffiliated/robotroll) has joined #archlinux
+2017-12-03 15:09:10	<--	feksclaus (~feksclaus@80-71-131-204.u.parknet.dk) has quit (Client Quit)
+2017-12-03 15:09:18	post-factum	phrik: say hello
+2017-12-03 15:09:18	@phrik	post-factum: Error: The command "say" is available in the Anonymous and QuoteGrabs plugins.  Please specify the plugin whose command you wish to call by using its name as a command before "say".
+2017-12-03 15:09:26	default	feksclaus (~feksclaus@80-71-131-204.u.parknet.dk) has joined #archlinux
+2017-12-03 15:09:39	default	JerryXiao (~JerryXiao@47.88.171.206) has joined #archlinux
+2017-12-03 15:10:00	--	irc: disconnected from server
+2017-12-24 22:21:28	default	the_fine_man (~the_fine_@95.76.56.90) has joined #archlinux
+2017-12-24 22:21:29	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: https://ptpb.pw https://gist.github.com https://bpaste.net | Become an official Arch Tester: https://goo.gl/48qpvG"
+2017-12-24 22:21:29	--	Topic set by phrik (phrik@archlinux/bot/phrik) on Tue, 05 Dec 2017 16:16:54
+2017-12-24 22:21:29	--	Channel #archlinux: 1705 nicks (2 ops, 0 voices, 1703 normals)
+2017-12-24 22:21:29	BoneTone	GodricArji: Openbox, login as openbox-session, well, my display manager takes care of that
+2017-12-24 22:21:30	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2017-12-24 22:21:52	GodricArji	Why Openbox?
+2017-12-24 22:21:57	BoneTone	i don't like the tiling WMs
+2017-12-24 22:22:16	BoneTone	it's super minimalist, I like the way it looks and works
+2017-12-24 22:22:31	BoneTone	you can't get much more minimalist than openbox
+2017-12-24 22:22:33	<--	hays (~quassel@fsf/member/hays) has quit (Ping timeout: 264 seconds)
+2017-12-24 22:22:54	GodricArji	Nice
+2017-12-24 22:23:03	GodricArji	I haven't found the skills to use a WM yet
+2017-12-24 22:23:06	BoneTone	i find tiling WMs like i3 very claustrophobic
+2017-12-24 22:23:12	GodricArji	Im still graduating from baby steps
+2017-12-24 22:23:29	BoneTone	well, any DE you're using has a WM
+2017-12-24 22:23:42	Mathisen	BoneTone, it is mather of getting used to, i did not like i3 in the start but now i love it
+2017-12-24 22:23:57	<--	mohan43u (~mohan43u@27.62.189.20) has quit (Ping timeout: 240 seconds)
+2017-12-24 22:24:13	BoneTone	but yeah, openbox doesn't do anything really beyond windows, no desktop icons or wallpaper, no panel, just a launch menu, window management and global keybinds pretty much
+2017-12-24 22:24:55	BoneTone	Mathisen: i just can't use tiling WMs, it doesn't work the way I do, i'm not saying it's bad, just different strokes
+2017-12-24 22:25:07	mongy	i3 is teh shizzle
+2017-12-24 22:25:14	Mathisen	BoneTone, ok
+2017-12-24 22:25:21	mongy	can't bring myself to use a DE again
+2017-12-24 22:25:25	BoneTone	if I want to tile a specific workspace/desktop, I've got keybinds that I can use to quickly tile it
+2017-12-24 22:25:26	occultus	not_a_nickname: "sudo mysql -u root" failed, "sudo mysql -u root -p" asked for password
+2017-12-24 22:26:05	BoneTone	because I do like certain virtual desktops/workspaces to be tiled, like the one i'm on now, where I have my irc, i pop open a few windows, and they are tiled, albeit in different sizes, not all the same
+2017-12-24 22:26:27	BoneTone	but i can toss windows left/right up/down, size them, just with a few taps on the keyboard
+2017-12-24 22:26:53	mongy	same.
+2017-12-24 22:26:57	default	porky11 (~porky11@p200300868A6091DD2489ACF43890BF8C.dip0.t-ipconnect.de) has joined #archlinux
+2017-12-24 22:27:08	BoneTone	once i finish tweaking my rc.xml i plan to share it
+2017-12-24 22:27:18	BoneTone	cuz my keybinds are pertty intense
+2017-12-24 22:27:26	occultus	not_a_nickname: actually, running mysql as a regular user works too with the mysql root user/password
+2017-12-24 22:28:25	not_a_nickname	occultus: I don't know why it wasn't working for me before.  Just glad we were able to get it working.  I'm positive I didn't mistype the password earlier because I redid it several times to check for it.  Must've just been too long.  Wish it would tell you that when you typed it in.  Thanks so much for your time and help!
+2017-12-24 22:28:30	heisenberg	mongy: really ? argue please >.<
+2017-12-24 22:28:39	mongy	?
+2017-12-24 22:28:45	heisenberg	why you love i3
+2017-12-24 22:29:17	occultus	not_a_nickname: oh sorry. i actually completely missed your last message saying it worked :P
+2017-12-24 22:29:18	mongy	why wouldn't I.  it's just simple AF 
+2017-12-24 22:29:51	mongy	no 'crazy keybinds' needed.
+2017-12-24 22:30:18	default	X-tonic_ (~X-tonic@2a02:a210:2202:2280:349a:68a5:2393:4acf) has joined #archlinux
+2017-12-24 22:30:29	default	nitdega (~nitdega@2600:1700:3570:fa7f:a42d:d4e9:202d:503) has joined #archlinux
+2017-12-24 22:31:09	default	protojeff (protojeff@sdf.lonestar.org) has joined #archlinux
+2017-12-24 22:31:10	<--	krystianbajno (~crystianb@host-89-229-181-121.dynamic.mm.pl) has quit (Quit: Leaving)
+2017-12-24 22:31:26	heisenberg	oki. I'll try it out.
+2017-12-24 22:31:50	heisenberg	I guess is very light, I probably won't find anything more battery friendly
+2017-12-24 22:32:01	mongy	no point listening to other people.  use it.  you'll either like it or not
+2017-12-24 22:32:20	heisenberg	oki
+2017-12-24 22:33:05	mongy	it's not something you'll pick up and run with immediately, but after you get used to it, you'll find it was worth it.
+2017-12-24 22:33:09	not_a_nickname	occultus: Lol I wasn't sure, but that's what I thought.  I'm using mariadb for an installation of nextcloud, kind of a BYOS version of Dropbox, Google's Cloud stuff, OneDrive, etc. all crammed into one.  I've never had a reason to use mysql before, and I'm running into issue after issue with this setup.  Anyways I'm glad we could get this part reso
+2017-12-24 22:33:09	not_a_nickname	lved, I appreciate it a bunch, thanks again.
+2017-12-24 22:33:37	default	lambda443 (~lambda443@unaffiliated/lambda443) has joined #archlinux
+2017-12-24 22:33:37	<--	Yomi (~yomi@ip68-228-150-246.ri.ri.cox.net) has quit (Quit: WeeChat 2.0.1)
+2017-12-24 22:33:49	GodricArji	mongy i want to use i3 but customizing it seems difficult
+2017-12-24 22:33:55	default	Yomi (~yomi@ip68-228-150-246.ri.ri.cox.net) has joined #archlinux
+2017-12-24 22:33:57	GodricArji	Is there a good guide out there?
+2017-12-24 22:34:05	default	mgnad78 (~Oknown_an@dslb-178-012-152-194.178.012.pools.vodafone-ip.de) has joined #archlinux
+2017-12-24 22:34:11	default	Doty1154 (~Doty1154@2601:648:8000:134f:bc76:a847:85ce:a61d) has joined #archlinux
+2017-12-24 22:34:13	mongy	GodricArji: check out Code Cast channel on youtube.  He will make it simpler.
+2017-12-24 22:34:35	occultus	not_a_nickname: i ended up moving to postgres for nextcloud because mysql's utf8 was a horrible nightmare, but current postgres and current nextcloud are incompatible
+2017-12-24 22:35:19	<--	heisenberg (~heisenber@212.66.123.252) has quit (Quit: Lost terminal)
+2017-12-24 22:36:02	mongy	GodricArji: I also recommend the 'linuxdays' youtube vid on tiling wm's.  the chick on that does a great job of showing multiple tilers.
+2017-12-24 22:36:22	not_a_nickname	occultus: Ah rip.  I read that mariadb was recommended for it, as it had extra capabilities or improved performance or something, and I was familiar with the name so I just assumed it'd probably have the most support.  I guess at this point I should go through with it right?  I'm using the AUR packages for php version 7.0 instead of nextcloud-git, 
+2017-12-24 22:36:22	not_a_nickname	which is supposedly compatible with php 7.2
+2017-12-24 22:36:30	GodricArji	Mongy i thank you for ur help good sir
+2017-12-24 22:37:19	<--	choru (~choru@78-62-157-12.static.zebra.lt) has quit (Quit: WeeChat 2.0.1)
+2017-12-24 22:38:42	occultus	not_a_nickname: mariadb is fine in general. the news app (RSS) recommended or required utf8 support which was a bit easier to set up on postgres than on mariadb when i moved to a new server and reinstalled everything
+2017-12-24 22:39:08	<--	rememberYou (~user@unaffiliated/rememberyou) has quit (Remote host closed the connection)
+2017-12-24 22:39:25	jelle	!bug 31544
+2017-12-24 22:39:25	phrik	https://bugs.archlinux.org/task/31544
+2017-12-24 22:40:23	not_a_nickname	occultus: What does the news app do exactly?  I read about it's existence but I don't know anything else.
+2017-12-24 22:41:04	<--	random-nick (~random-ni@unaffiliated/random-nick) has quit (Ping timeout: 265 seconds)
+2017-12-24 22:41:38	occultus	not_a_nickname: it's an RSS feed aggregator, useful for tracking a lot of blogs or website updates in one location
+2017-12-24 22:42:59	not_a_nickname	Sounds useful actually. The primary use for my purposes is going to be the storage and calendar features, but I'll probably look into setting that app up down the line.  Thanks.
+2017-12-24 22:43:14	BoneTone	mongy: i didn't say my keybinds were crazy, just that the definitions are intense, because i have so many and have created keychains as well, as a user of i3, i figure you would appreciate heavy use of the keyboard, and the deep customization of its use
+2017-12-24 22:43:37	mongy	:)
+2017-12-24 22:44:20	<--	arora (~ashok@92.96.247.70) has quit (Quit: leaving)
+2017-12-24 22:44:31	default	kupi (uid212005@gateway/web/irccloud.com/x-lltweboafctbtitj) has joined #archlinux
+2017-12-24 22:44:47	default	random-nick (~random-ni@unaffiliated/random-nick) has joined #archlinux
+2017-12-24 22:44:54	mongy	I use a few simple keybinds, and in my veggie state like now, I use my mouse a lot too
+2017-12-24 22:45:04	default	foolaround (~foolaroun@gateway/vpn/privateinternetaccess/foolaround) has joined #archlinux
+2017-12-24 22:45:12	BoneTone	and just in comparison to other configs i've seen on the internet, i've got a lot more going on with the movement of windows, but before i share it i want to tweak a few things and comment it well
+2017-12-24 22:45:42	BoneTone	oh yeah, there are times when i just sit back and only use the mouse, any well built/designed system in my mind enables to the user to do either or both
+2017-12-24 22:45:49	default	arora (~ashok@92.96.247.70) has joined #archlinux
+2017-12-24 22:46:30	BoneTone	functionality should be accessible through both the mouse & keyboard, so whatever state the user is in, they can work efficiently
+2017-12-24 22:47:31	<--	kumala (~bastien@90.173.148.55) has quit (Ping timeout: 260 seconds)
+2017-12-24 22:48:19	<--	m1n (~m1n@unaffiliated/m1ntfr3sh) has quit (Ping timeout: 265 seconds)
+2017-12-24 22:48:24	BoneTone	also, i'm not knocking i3, i think it is very attractive, but its not for me, that's beauty of linux, especially arch, being able to set up whatever DE/WM you like, it's a very personal choice and i agree with you, don't let someone else's opinion sway you away from trying something, just play with it and see if you like it
+2017-12-24 22:50:00	<--	X-tonic_ (~X-tonic@2a02:a210:2202:2280:349a:68a5:2393:4acf) has quit (Ping timeout: 272 seconds)
+2017-12-24 22:50:05	default	wr3n (~wr3n@unaffiliated/d0remix) has joined #archlinux
+2017-12-24 22:50:30	<--	ganthore (~ganthore@104-182-55-246.lightspeed.rlghnc.sbcglobal.net) has quit (Ping timeout: 268 seconds)
+2017-12-24 22:51:13	default	nunatak (~nunatak@unaffiliated/nunatak) has joined #archlinux
+2017-12-24 22:51:27	<--	wr3n (~wr3n@unaffiliated/d0remix) has left #archlinux
+2017-12-24 22:52:43	default	ganthore (~ganthore@104-182-55-246.lightspeed.rlghnc.sbcglobal.net) has joined #archlinux
+2017-12-24 22:53:01	default	GAZDOWN (~quassel@ip-213-220-214-184.net.upcbroadband.cz) has joined #archlinux
+2017-12-24 22:54:05	default	noobineer (~noobineer@c-68-55-184-193.hsd1.mi.comcast.net) has joined #archlinux
+2017-12-24 22:54:34	<--	noobineer (~noobineer@c-68-55-184-193.hsd1.mi.comcast.net) has quit (Max SendQ exceeded)
+2017-12-24 22:55:15	default	noobineer (~noobineer@c-68-55-184-193.hsd1.mi.comcast.net) has joined #archlinux
+2017-12-24 22:55:34	default	arora_ (~ashok@92.96.247.70) has joined #archlinux
+2017-12-24 22:55:41	<--	arora (~ashok@92.96.247.70) has quit (Quit: leaving)
+2017-12-24 22:55:46	<--	noobineer (~noobineer@c-68-55-184-193.hsd1.mi.comcast.net) has quit (Max SendQ exceeded)
+2017-12-24 22:56:22	default	noobineer (~noobineer@c-68-55-184-193.hsd1.mi.comcast.net) has joined #archlinux
+2017-12-24 22:57:37	<--	GAZDOWN (~quassel@ip-213-220-214-184.net.upcbroadband.cz) has quit (Ping timeout: 248 seconds)
+2017-12-24 22:59:22	default	msjche (~msjche@unaffiliated/msjche) has joined #archlinux
+2017-12-24 23:00:21	<--	Alakzadeh (~alakie@unaffiliated/alakzadeh) has quit (Ping timeout: 260 seconds)
+2017-12-24 23:00:45	default	gugah (~gugah@181.229.86.80) has joined #archlinux
+2017-12-24 23:01:22	default	erkin (~erkin@unaffiliated/erkin) has joined #archlinux
+2017-12-24 23:02:03	gugah	hi guys i need help replacing the hdd on my system. I've already dd'ed the current drive into the new one (both are same size). What's next? (I'm using EFI boot)
+2017-12-24 23:03:14	sheep	gugah: that should be enough, though you might need to reinstall your bootloader or readd the EFI boot entries for it
+2017-12-24 23:03:43	<--	gigetoo (~gigetoo@c83-250-32-22.bredband.comhem.se) has quit (Remote host closed the connection)
+2017-12-24 23:03:46	beest	if you're using uuids, just verify/change to the uuid of your new drive
+2017-12-24 23:03:51	beest	in your boot loader
+2017-12-24 23:03:51	<--	krup (~krup@unaffiliated/krup) has quit (Ping timeout: 260 seconds)
+2017-12-24 23:04:22	gugah	beest, that's replacing /etc/fstab on the new drive right?
+2017-12-24 23:04:28	gugah	im using uuid yes
+2017-12-24 23:04:41	beest	well, both fstab and your boot loader
+2017-12-24 23:05:04	default	gigetoo (~gigetoo@c83-250-32-22.bredband.comhem.se) has joined #archlinux
+2017-12-24 23:05:14	<--	ryp (~ryp@gateway/vpn/privateinternetaccess/ryp) has quit (Ping timeout: 265 seconds)
+2017-12-24 23:05:40	<--	sud0 (~Death@hackspaceuy/member/sud0) has quit (Quit: leaving)
+2017-12-24 23:06:16	<--	intcat (~zshlyk@gateway/tor-sasl/intcat) has quit (Remote host closed the connection)
+2017-12-24 23:06:21	<--	Fulgen_ (~Fulgen@078132073096.public.t-mobile.at) has quit (Ping timeout: 263 seconds)
+2017-12-24 23:06:55	default	intcat (~zshlyk@gateway/tor-sasl/intcat) has joined #archlinux
+2017-12-24 23:07:54	<--	raijin (~raijin@unaffiliated/raijin) has quit (Read error: Connection reset by peer)
+2017-12-24 23:08:11	<--	arora_ (~ashok@92.96.247.70) has quit (Quit: Lost terminal)
+2017-12-24 23:08:15	default	Amm0n (~Amm0n@unaffiliated/amm0n) has joined #archlinux
+2017-12-24 23:08:16	default	Aardwolf (~BBQ@77-56-147-202.dclient.hispeed.ch) has joined #archlinux
+2017-12-24 23:08:31	default	arora (~ashok@92.96.247.70) has joined #archlinux
+2017-12-24 23:08:43	<--	NicoHood (~arch@archlinux/trusteduser/NicoHood) has quit (Quit: Leaving.)
+2017-12-24 23:08:43	<--	Throne3d_ (~throne3d@gateway/vpn/privateinternetaccess/throne3d) has quit (Remote host closed the connection)
+2017-12-24 23:09:01	default	com1 (~com1@p200300C7FBCD6000BA2D3E1E00968CAE.dip0.t-ipconnect.de) has joined #archlinux
+2017-12-24 23:09:24	Aardwolf	Hi, I tried to install archlinux on a new computer, but after booting with grub it says "ACPI error", "namespace lookup failure", "AE_NOT_FOUND". Also, I would expect it to ask for a password since I used full disk encryption with luks for root (but not for boot). What could be wrong?
+2017-12-24 23:09:42	MrElendig	Aardwolf: forgot the hooks?
+2017-12-24 23:10:45	Aardwolf	I added "cryptdevice=......" (as in the wiki under Dm-Crypt" to the grub config, and, I added "encrypt" to mkinitcpio.conf (which would have no effect I think, how can it read that file if it never asked for a password). Anything else I'm missing?
+2017-12-24 23:12:42	default	alasi (uid197723@gateway/web/irccloud.com/x-hvqhgkpvpisgfddq) has joined #archlinux
+2017-12-24 23:12:42	default	Alakzadeh (~alakie@unaffiliated/alakzadeh) has joined #archlinux
+2017-12-24 23:12:46	<--	pavlushka (~pavlushka@ubuntu/member/pavlushka) has quit (Quit: See you on the other side)
+2017-12-24 23:12:54	alasi	is it ok practice to dockerize all of my dev environments on my new machine
+2017-12-24 23:12:58	MrElendig	I suggest using systemd 
+2017-12-24 23:13:11	Foxboron	alasi: systemd-nspawn is great
+2017-12-24 23:13:11	<--	averagejoey2000 (~averagejo@gateway/vpn/privateinternetaccess/loshadovich) has quit (Ping timeout: 255 seconds)
+2017-12-24 23:13:24	<--	arora (~ashok@92.96.247.70) has quit (Client Quit)
+2017-12-24 23:13:25	MrElendig	Aardwolf: ^
+2017-12-24 23:13:26	<--	shywim (~shywim@94.ip-193-70-114.eu) has quit (Quit: The Lounge - https://thelounge.github.io)
+2017-12-24 23:13:26	default	N0S4A2 (~weechat@24.35.69.143) has joined #archlinux
+2017-12-24 23:13:32	Amm0n	Hi, if i try: sudo journalctl ?-vacuum-size=100M i get: Failed to add match '?-vacuum-size=100M': Invalid argument. Any ideas?
+2017-12-24 23:13:35	MrElendig	also, did you rebuild the initcpio afterwards?
+2017-12-24 23:13:41	mongy	I've grown fond of some lxc myself
+2017-12-24 23:13:46	alasi	Foxboron: ive never heard `systemd(.+) is great` uttered before
+2017-12-24 23:13:57	sheep	Amm0n: -- or ?- ?
+2017-12-24 23:14:29	Aardwolf	MrElendig, actually, in that case never mind about initcpio, then I just followed that step (from the Dm-Crypt arch wiki article) without reason. I am using systemd, I just did the default install and it says "version 236" on startup so it's there
+2017-12-24 23:14:32	<--	opalepatrick (~opalepatr@50.152.93.209.dyn.plus.net) has quit (Remote host closed the connection)
+2017-12-24 23:14:40	<--	Omar007 (~Omar007@2001:980:d086:1:546b:a5ff:fe82:b481) has quit (Quit: Omar007)
+2017-12-24 23:14:40	Foxboron	alasi: then you hang around wierd people that dont do much sysadmin stuff
+2017-12-24 23:14:42	Amm0n	sheep, thanks mate
+2017-12-24 23:14:50	MrElendig	I mean systemd in the initcpio
+2017-12-24 23:15:08	alasi	Foxboron: I like the docker ecosystem because people configged the ideal setups for me already
+2017-12-24 23:15:14	default	krup (~krup@unaffiliated/krup) has joined #archlinux
+2017-12-24 23:15:17	default	RickDeckard (~tgburrin@cpe-69-207-216-204.stny.res.rr.com) has joined #archlinux
+2017-12-24 23:15:18	Aardwolf	I'll need to look that up then :/
+2017-12-24 23:15:22	alasi	Foxboron: nspawn looks a bit bare in comparison
+2017-12-24 23:15:25	default	ianmethyst (~ianmethys@181.231.109.30) has joined #archlinux
+2017-12-24 23:15:27	<--	Yomi (~yomi@ip68-228-150-246.ri.ri.cox.net) has quit (Ping timeout: 240 seconds)
+2017-12-24 23:15:34	alasi	For context it'd be stuff like jupyter notebooks etc
+2017-12-24 23:16:09	default	Omar007 (~Omar007@2001:980:d086:1:546b:a5ff:fe82:b481) has joined #archlinux
+2017-12-24 23:16:22	Foxboron	alasi: i use it to either clone my live system for things or build stuff within
+2017-12-24 23:16:59	occultus	alasi: you're going to containerize... what, every jupyter notebook? or one container per programming language?
+2017-12-24 23:17:14	Amm0n	Aardwolf, with your acpi error you could try to boot with kerneloption: acpi_osi=
+2017-12-24 23:18:31	MrElendig	acpi errors are usually a red herring
+2017-12-24 23:19:01	Aardwolf	I probably did not run mkinitcpio -p linux, so that will probably fix it, thanks!
+2017-12-24 23:19:20	<--	revertive (~revertive@f4199.upc-f.chello.nl) has quit (Remote host closed the connection)
+2017-12-24 23:19:44	alasi	occultus: the latter is probably ideal
+2017-12-24 23:19:51	alasi	hmm
+2017-12-24 23:19:57	default	lajaybird (~jaybird@74.192.135.234) has joined #archlinux
+2017-12-24 23:19:58	alasi	so i
+2017-12-24 23:20:54	alasi	'll probably store each notebook in its own git repo, and each repo will also have its own dockerfile, but if there's a common programming language it'll use the same layer on my system
+2017-12-24 23:21:13	Aardwolf	oh yes running mkinitcpio fixed it! It still gives those very same ACPI errors at the beginning though... but at least it boots
+2017-12-24 23:21:24	Aardwolf	so those ACPI errors are to be ignored?
+2017-12-24 23:22:02	default	Travankor (~Travankor@185.212.171.12) has joined #archlinux
+2017-12-24 23:22:40	<--	krup (~krup@unaffiliated/krup) has quit (Ping timeout: 248 seconds)
+2017-12-24 23:23:07	default	shywim (~shywim@94.ip-193-70-114.eu) has joined #archlinux
+2017-12-24 23:23:35	<--	cmx (~cmx@x590cb8e8.dyn.telefonica.de) has quit (Ping timeout: 240 seconds)
+2017-12-24 23:24:33	default	raijin (~raijin@unaffiliated/raijin) has joined #archlinux
+2017-12-24 23:25:10	MrElendig	usually
+2017-12-24 23:25:39	<--	RickDeckard (~tgburrin@cpe-69-207-216-204.stny.res.rr.com) has quit (Ping timeout: 268 seconds)
+2017-12-24 23:26:05	<--	com1 (~com1@p200300C7FBCD6000BA2D3E1E00968CAE.dip0.t-ipconnect.de) has quit (Quit: com1)
+2017-12-24 23:26:26	<--	gigetoo (~gigetoo@c83-250-32-22.bredband.comhem.se) has quit (Ping timeout: 252 seconds)
+2017-12-24 23:26:45	default	sud0 (~Death@hackspaceuy/member/sud0) has joined #archlinux
+2017-12-24 23:26:49	default	gigetoo (~gigetoo@c83-250-32-22.bredband.comhem.se) has joined #archlinux
+2017-12-24 23:28:32	<--	xlx (~xlx@unaffiliated/xlx) has quit (Ping timeout: 248 seconds)
+2017-12-24 23:29:11	<--	Chocobozzz (~florian@cpy.re) has quit (Remote host closed the connection)
+2017-12-24 23:29:32	<--	BoneTone (~BoneTone@gateway/vpn/privateinternetaccess/bonetone) has quit (Quit: gone)
+2017-12-24 23:29:39	<--	ahi2 (~ahi2@67-0-3-198.albq.qwest.net) has left #archlinux ("Leaving")
+2017-12-24 23:29:45	<--	Jesin (~Jesin@pool-108-51-89-131.washdc.fios.verizon.net) has quit (Ping timeout: 264 seconds)
+2017-12-24 23:29:50	default	jonbryan (~nope@unaffiliated/jonbryan) has joined #archlinux
+2017-12-24 23:30:04	default	averagejoey2000 (~averagejo@gateway/vpn/privateinternetaccess/loshadovich) has joined #archlinux
+2017-12-24 23:31:04	<--	IanLiu (~IanLiu@187.11.108.68) has quit (Quit: IanLiu)
+2017-12-24 23:31:15	<--	ianmethyst (~ianmethys@181.231.109.30) has quit (Quit: WeeChat 2.0.1)
+2017-12-24 23:31:43	default	ianmethyst (~ianmethys@181.231.109.30) has joined #archlinux
+2017-12-24 23:32:09	<--	jstsmthrgk (~jstsmthrg@91-113-50-158.adsl.highway.telekom.at) has quit (Ping timeout: 264 seconds)
+2017-12-24 23:32:10	default	krup (~krup@unaffiliated/krup) has joined #archlinux

@@ -1,0 +1,221 @@
+2017-12-24 22:03:07	default	the_fine_man (~the_fine_@95.76.56.90) has joined #reddit
+2017-12-24 22:03:07	--	Topic for #reddit is "Welcome to #reddit 2000!? ? Built on HTML5 Programming + Cloud Technologies!? ? need help with the reddit API? Try #reddit-dev ? Your ops ?????? One Rule: Don't Be A Dick ? FESTIVE FUN TIME! ? this channel is run by shills. frig off if you don't like it"
+2017-12-24 22:03:07	--	Topic set by deepend (~za-lord@unaffiliated/za-lord) on Fri, 22 Dec 2017 22:11:00
+2017-12-24 22:03:07	--	Channel #reddit: 222 nicks (2 ops, 5 voices, 215 normals)
+2017-12-24 22:03:07	--	URL for #reddit: http://irc.reddit.com/
+2017-12-24 22:03:11	--	Channel created on Tue, 21 Aug 2007 08:27:39
+2017-12-24 22:04:04	mr_yogurt	Delver: can you elaborate?
+2017-12-24 22:04:32	mr_yogurt	also i probably should've said thumbsticks rather than joysticks but whatever
+2017-12-24 22:05:25	Delver	well in most cases the gimbals on a joystick or several inches away from the center of your hand. this requires your hand to make a rotational movement as well as a sideward translation to move it to the side
+2017-12-24 22:05:51	Delver	where you really should have the pitch/yaw axis closer to the center of your hand
+2017-12-24 22:06:06	+m[at]	are we discussing masturbation physics?
+2017-12-24 22:06:28	Delver	3d joysticks at least have a twist axis through the center. but it doesn't synch with the pitch and roll axis so it feels all wrong.
+2017-12-24 22:06:37	Delver	this is why the pedals feel more natural
+2017-12-24 22:08:05	+m[at]	"You all just got a lot richer,? Trump tells friends, referencing tax overhaul
+2017-12-24 22:08:52	+m[at]	tacoinanus: talk turkey
+2017-12-24 22:09:25	default	enterprisey (~enterpris@wikipedia/enterprisey) has joined #reddit
+2017-12-24 22:09:39	Delver	hmm, mr_yogurt have you ever seen those overly expensive 3d mice pucks?
+2017-12-24 22:10:03	mr_yogurt	no? what are those?
+2017-12-24 22:10:26	Delver	http://imgs.abduzeedo.com/files/perfect_office/63/axsotic-3d-mouse-04-gal.jpg
+2017-12-24 22:10:42	Delver	https://www.solidsmack.com/wp-content/uploads/2011/12/3dconnexion-spacemouse-pro-00a1.jpg
+2017-12-24 22:10:51	<--	Kitar|st (~Kitarst@109.182.42.203) has quit (Ping timeout: 256 seconds)
+2017-12-24 22:11:13	<--	python476 (~user@mfl93-6-88-169-195-97.fbx.proxad.net) has quit (Ping timeout: 248 seconds)
+2017-12-24 22:11:26	mr_yogurt	Delver: i'm not seeing the similarity between those
+2017-12-24 22:11:32	Delver	http://blog.grabcad.com/wp-content/uploads/2010/08/3d-mouse-ball-624x425.jpg
+2017-12-24 22:11:49	mr_yogurt	Delver: what about them?
+2017-12-24 22:12:23	Delver	well the mice are meant for cad operations. howver the one that looks like it's in a 3d gibal offers all the translation axis. I'd like a game version of that
+2017-12-24 22:12:57	Delver	it mimics to some degree the teleoperator systems for radioactive hot boxes. IF I can find the image
+2017-12-24 22:13:13	default	amigan (dtf@unaffiliated/amigan) has joined #reddit
+2017-12-24 22:13:46	mr_yogurt	i've been meaning to see if i can throw together a prototype space sim real quick in unity or something that uses oculus touch controllers for control
+2017-12-24 22:13:57	default	python476 (~user@mfl93-6-88-169-195-97.fbx.proxad.net) has joined #reddit
+2017-12-24 22:14:16	Delver	hmm without haptic feedback I'm not sure that would be great
+2017-12-24 22:14:35	mr_yogurt	yeah that's part of the problem
+2017-12-24 22:14:43	mr_yogurt	other issue is i'm not sure of an intuitive way to do it
+2017-12-24 22:15:48	mr_yogurt	Delver: and now i want to buy one of those ridiculous 3d mice and see if i can make it a spaceship controller
+2017-12-24 22:15:53	mr_yogurt	or two
+2017-12-24 22:16:01	Delver	I bet someone has done it
+2017-12-24 22:16:25	Delver	It'd have to emulate the old joystick from a console game I had from back in the late 1970s
+2017-12-24 22:16:35	Delver	the Fairchild Channel F controller
+2017-12-24 22:16:46	Delver	not the way it looked but some of the capability
+2017-12-24 22:16:57	Delver	probably the first 3d controller for any videogame
+2017-12-24 22:17:30	Delver	it had 4 translations, plus twist. it was only missing roll
+2017-12-24 22:18:18	circly	what about rock?
+2017-12-24 22:18:43	default	Kitar|st (~Kitarst@BSN-182-42-203.dynamic.siol.net) has joined #reddit
+2017-12-24 22:18:58	<--	python476 (~user@mfl93-6-88-169-195-97.fbx.proxad.net) has quit (Ping timeout: 272 seconds)
+2017-12-24 22:19:06	Delver	a rock has to have the right texture because holding on to a hard surface with sharp edges can be painful after a good long day of rock fighting
+2017-12-24 22:20:06	Delver	early picture of a mechanical 3d manipulator:  http://vignette3.wikia.nocookie.net/muppet/images/7/77/Waldo_Courtesy_of_Thomas_A._Newby.jpg/revision/latest?cb=20060630143240
+2017-12-24 22:23:01	Delver	https://www.youtube.com/watch?v=b8Me8d9UZLA
+2017-12-24 22:23:02	+reddit-bot	(Delver) FlightGear controlled by 3Dconnexion SpaceNavigator - length 49s - 2 likes, 2 dislikes (50.0%) - 4,897 views - 10milesfinal on 2009.08.04
+2017-12-24 22:23:20	mr_yogurt	oh fuck yeah
+2017-12-24 22:23:29	Delver	but it's overrated
+2017-12-24 22:23:29	<--	willc (~willc@unaffiliated/willc) has quit (Ping timeout: 248 seconds)
+2017-12-24 22:23:50	Delver	I mean it's kind of a hat at that point
+2017-12-24 22:23:50	mr_yogurt	but he's not even flying it
+2017-12-24 22:23:53	mr_yogurt	fuck unyeah
+2017-12-24 22:25:01	Delver	https://www.youtube.com/watch?v=kbgEmUukI1I
+2017-12-24 22:25:02	+reddit-bot	(Delver) Navigating Google Earth with a 3DConnexion controller - length 1m 37s - 450 views - Stefan Geens on 2011.04.23
+2017-12-24 22:25:42	mr_yogurt	those aren't really good demos
+2017-12-24 22:25:45	Delver	anyway, they should make a game version
+2017-12-24 22:26:02	Delver	give me two with some nice butt ons and I'd be cool
+2017-12-24 22:26:02	+reddit-bot	(? ? . ? )?  (???)
+2017-12-24 22:26:27	mr_yogurt	in the google earth one they're not manipulating thrust, they're manipulating velocity directly, which isn't really the same
+2017-12-24 22:26:30	Delver	welp. there's got to be a good reason there aren't many demos
+2017-12-24 22:26:57	mr_yogurt	send me $100 and i'll buy one and make a demo
+2017-12-24 22:27:38	<--	wordsToLiveBy (~wordsToLi@unaffiliated/wordstoliveby) has quit (Quit: Night night)
+2017-12-24 22:27:48	mr_yogurt	i don't see why you can't have it just fake a joystick
+2017-12-24 22:28:15	default	snugglebitch (~ruin@ip72-223-64-187.ph.ph.cox.net) has joined #reddit
+2017-12-24 22:28:25	mr_yogurt	with some custom software
+2017-12-24 22:28:42	mr_yogurt	or multiple joysticks or whatever it is you would usually play the games with
+2017-12-24 22:28:54	Delver	because of the lack of axis options
+2017-12-24 22:29:09	mr_yogurt	?
+2017-12-24 22:29:12	Delver	where a 3dconnection gives you 6 dof
+2017-12-24 22:29:34	mr_yogurt	what's wrong with that?
+2017-12-24 22:29:35	Delver	up/down forward/back twist/tilt
+2017-12-24 22:29:43	<--	Tennis (~Tennis@unaffiliated/tennis) has quit (Quit: Leaving)
+2017-12-24 22:29:50	Delver	in a space sim you'll want that 
+2017-12-24 22:29:56	mr_yogurt	yeah
+2017-12-24 22:29:59	mr_yogurt	i'm not seeing the problem
+2017-12-24 22:30:21	Delver	that requires multiple appendages
+2017-12-24 22:30:50	mr_yogurt	? i don't think people operate these things two-handed
+2017-12-24 22:30:55	Delver	that's the problem. those other appendages could be used for beer, wanking, typing in rants and childish attacks, etc
+2017-12-24 22:32:19	mr_yogurt	what's wrong with that
+2017-12-24 22:32:43	Delver	mr_yogurt, well that's why I almost always see jousting rather than a proper intercept, in videogame space sims. if you're jousing, you're doing it wrong
+2017-12-24 22:33:32	Delver	https://www.youtube.com/watch?v=XMeDExipHhU
+2017-12-24 22:33:32	+reddit-bot	(Delver) Elite:Dangerous played with Space Mouse Pro - length 20m 22s - 16 likes, 1 dislike (94.1%) - 5,527 views - Alexander Gst?hl on 2015.02.02
+2017-12-24 22:34:20	mr_yogurt	Delver: why would a 3d mouse make you joust more
+2017-12-24 22:34:38	Delver	no. I'm saying it would make you joust less
+2017-12-24 22:35:04	mr_yogurt	isn't that a good thing
+2017-12-24 22:36:07	mr_yogurt	i think we're talking past each other
+2017-12-24 22:36:30	Delver	the thing is, many people can barely use one input. two if you include the pedals. most of the time, I can only use my right hand (with fine motor control) for the stick. where I would use my left hand (with gross control skill) for mashing buttons. I can't use my left hand for fine control because I'm right handed. I could use my feet but then I'd need yet another controler. and of course, I have to put my feet in a particular spot and I'd have to 
+2017-12-24 22:36:30	Delver	set up and a certain angle
+2017-12-24 22:36:30	mr_yogurt	are you saying that if we fake a joystick with the space mouse we'll lose some of our 6dof and it'll be 3dof or something
+2017-12-24 22:37:03	Delver	no. I'm saying we GAIN control because all degrees of movement are now under the hand that has fine control skills
+2017-12-24 22:37:56	Delver	his hand is also doing all of this with minimal motion
+2017-12-24 22:38:18	mr_yogurt	Delver: i suppose implementing it doesn't mean much since someone's already done it from the looks of things
+2017-12-24 22:38:31	Delver	large motions are bad because it involves the elbow and shoulder which tire easily and also lack fine control
+2017-12-24 22:38:33	Delver	yes
+2017-12-24 22:38:45	<--	levite_ (~dubrock@gateway/vpn/privateinternetaccess/dubrock) has quit (Ping timeout: 265 seconds)
+2017-12-24 22:38:52	default	chrispra_ (~chrisprat@gateway/vpn/privateinternetaccess/chrispratt) has joined #reddit
+2017-12-24 22:38:52	default	levite__ (~dubrock@gateway/vpn/privateinternetaccess/dubrock) has joined #reddit
+2017-12-24 22:39:14	chrispra_	one should do joust the right amount
+2017-12-24 22:39:19	Delver	I'd just like to see better, more along a hotas.
+2017-12-24 22:39:28	mr_yogurt	so you can get a cut-down one for $100 - https://www.amazon.com/3Dconnexion-3DX-700028-SpaceNavigator-3D-Mouse/dp/B000LB7G00/
+2017-12-24 22:39:29	<--	chrispratt (~chrisprat@gateway/vpn/privateinternetaccess/chrispratt) has quit (Ping timeout: 248 seconds)
+2017-12-24 22:39:30	+reddit-bot	(mr_yogurt) 3Dconnexion 3DX-700028 SpaceNavigator 3D Mouse (Only 18 left in stock - order soon.) - 4.5/5 stars (629 ratings) - Prime, Free Shipping
+2017-12-24 22:39:49	+m[at]	Delver has to be able to thread the needle whle flying through the kuiper belt
+2017-12-24 22:40:05	default	xD3C (~0x6e616d6@ip4d147a9c.dynamic.kabel-deutschland.de) has joined #reddit
+2017-12-24 22:40:40	Delver	m[at], no, I need to ride saturns rings without losing any robots
+2017-12-24 22:40:57	mr_yogurt	if you buy two then you can fly two spaceships
+2017-12-24 22:41:11	+m[at]	kvmj
+2017-12-24 22:42:41	Delver	shame, I can't find silent running's ring ride
+2017-12-24 22:42:51	Delver	chrispra_, don't space joust
+2017-12-24 22:43:00	Delver	it ain't right and it's not good fizzix
+2017-12-24 22:43:05	--	chrispra_ is now known as chrispratt
+2017-12-24 22:44:47	+m[at]	I just pictured a giant spaceship in the shape of the bird and knight from the joust videogame
+2017-12-24 22:44:55	+m[at]	with flapping spacewings
+2017-12-24 22:45:19	Delver	oh really? I was picturing knights in armor on motorcycles
+2017-12-24 22:45:55	Delver	https://youtu.be/_uNs3SRObXw?t=9
+2017-12-24 22:45:56	+reddit-bot	(Delver) George A. Romero's Knightriders (1/2) Motorcycle Jousting! (1981) - length 1m 59s - 29 likes, 1 dislike (96.7%) - 8,109 views - Shout! Factory on 2013.11.27
+2017-12-24 22:46:20	StackProphet	.we
+2017-12-24 22:46:29	StackProphet	.we 60606
+2017-12-24 22:46:30	+reddit-bot	(StackProphet) Chicago, IL - Current: Snow, 22.8F/-5.1C, 87%, Wind: 1.6KPH/1.0MPH ?, Today: Snow Showers, High: 24F/-4C, Low: 18F/-8C. Tomorrow: Partly Cloudy, High: 22F/-6C, Low: 3F/-16C - https://is.gd/7xbMg1
+2017-12-24 22:48:30	Delver	mr_yogurt, if you have any questions about fantasy spaceships. I'm the man to talk to. I know everything ther eis to know about fantasy spaceships... in my mnd
+2017-12-24 22:48:33	Delver	:(
+2017-12-24 22:48:34	+m[at]	.yt vincent black shadow
+2017-12-24 22:48:35	+reddit-bot	(m[at]) Vincent Black Shadow 1953 for sale - length 3m 16s - 173 likes, 22 dislikes (88.7%) - 110,800 views - William Melvin on 2014.03.22 - http://youtu.be/-XEcanCVBt0
+2017-12-24 22:50:22	justache	http://www.wsmh19.com/fire-alarm-shots-fired-at-nakatomi-plaza/
+2017-12-24 22:50:23	+reddit-bot	Title: Fire Alarm, Shots Fired At Nakatomi Plaza - WSMH19 Local News
+2017-12-24 22:50:50	Delver	.yt run dmc christmas santa
+2017-12-24 22:50:50	+reddit-bot	(Delver) RUN-DMC - Christmas In Hollis (Video) - length 4m 3s - 45,119 likes, 1,924 dislikes (95.9%) - 9,093,798 views - RUNDMCVEVO on 2009.10.25 - http://youtu.be/OR07r0ZMFb8
+2017-12-24 22:52:51	Delver	Dwayne got buttfucked on national tv
+2017-12-24 22:53:11	<--	chalk46 (~brian@unaffiliated/chalk46) has quit (Quit: leaving)
+2017-12-24 22:53:37	tacoinanus	Whoo! Our company is now over
+2017-12-24 22:53:41	tacoinanus	m[at]: it's worked out
+2017-12-24 22:53:47	tacoinanus	I've got it stuffed now!
+2017-12-24 22:55:47	+m[at]	ummm
+2017-12-24 22:56:11	+m[at]	please err on the side of done with your stuffing
+2017-12-24 22:56:14	+m[at]	well done
+2017-12-24 22:56:41	mr_yogurt	Delver: look what you did
+2017-12-24 22:56:48	mr_yogurt	Delver: i think i'm going to buy one of those noww
+2017-12-24 22:56:54	mr_yogurt	*now
+2017-12-24 23:08:58	circly	.tv dr who 2005
+2017-12-24 23:08:58	+reddit-bot	(circly) Unknown TV series. (using www.thetvdb.com)
+2017-12-24 23:09:39	circly	.tv Doctor Who (2005)
+2017-12-24 23:09:40	+reddit-bot	(circly) There are no new episodes scheduled for Doctor Who (2005).
+2017-12-24 23:11:21	snugglebitch	why is there no christmas ep
+2017-12-24 23:11:25	snugglebitch	are they dead
+2017-12-24 23:12:20	snugglebitch	omg there's a cactus weekly planner
+2017-12-24 23:12:23	snugglebitch	i neeeeeeeds it
+2017-12-24 23:12:57	snugglebitch	omg omg omg
+2017-12-24 23:12:58	snugglebitch	https://www.amazon.com/dp/B072JNFRC5/ref=strm_fun_nad_4_2
+2017-12-24 23:13:06	circly	a what
+2017-12-24 23:13:22	snugglebitch	idk it's a planner that features cactuses
+2017-12-24 23:13:30	circly	i see
+2017-12-24 23:13:31	snugglebitch	and now there's stuffed animals with tiny heads and big bodies
+2017-12-24 23:13:44	snugglebitch	they have a sloth tiny head one!!!
+2017-12-24 23:13:46	snugglebitch	and a fox!!!!!!!!!
+2017-12-24 23:14:08	snugglebitch	if they had a hippo i would die
+2017-12-24 23:14:09	circly	!
+2017-12-24 23:14:11	snugglebitch	and i'd have to buy it
+2017-12-24 23:14:25	snugglebitch	i'm so glad they do not have a hippo
+2017-12-24 23:15:09	snugglebitch	amazon is the devil though
+2017-12-24 23:16:26	circly	stop shopping
+2017-12-24 23:16:36	snugglebitch	i caaaaaaaaaaaan't
+2017-12-24 23:16:40	circly	you're just tormenting yourself
+2017-12-24 23:16:42	snugglebitch	they have mermaid cups
+2017-12-24 23:16:45	snugglebitch	MERMAID CUPS
+2017-12-24 23:17:42	circly	mhm
+2017-12-24 23:18:02	snugglebitch	i don't understand why they have so many cactus themed stuff
+2017-12-24 23:18:15	snugglebitch	they have cactus pins
+2017-12-24 23:18:17	snugglebitch	that you can wear
+2017-12-24 23:18:21	snugglebitch	like why would anyone do that
+2017-12-24 23:18:27	snugglebitch	just walk around with a cactus pin
+2017-12-24 23:18:41	circly	why would anyone want a cactus planner?
+2017-12-24 23:18:46	snugglebitch	if they lived in a desert it would be redundant
+2017-12-24 23:18:55	snugglebitch	if they don't live in a desert, it'd be fucking weird
+2017-12-24 23:19:00	snugglebitch	I DON'T KNOW
+2017-12-24 23:19:32	snugglebitch	oh good, they have pizza stickers
+2017-12-24 23:19:41	snugglebitch	for when you want to share love of pizza. 
+2017-12-24 23:19:43	snugglebitch	i guess.
+2017-12-24 23:20:38	snugglebitch	if i gave you a ceramic hippo head, would you put it on your wall
+2017-12-24 23:20:51	snugglebitch	i'm asking for a friend
+2017-12-24 23:21:41	circly	no, i would not
+2017-12-24 23:22:11	snugglebitch	sad
+2017-12-24 23:22:20	snugglebitch	it's nonrefundable
+2017-12-24 23:22:39	circly	they dont want it back
+2017-12-24 23:23:06	snugglebitch	no one wants the hippo head!
+2017-12-24 23:23:12	circly	except you
+2017-12-24 23:23:30	snugglebitch	i mean 
+2017-12-24 23:23:39	snugglebitch	hippo heads are pretty cool
+2017-12-24 23:24:27	circly	not to me
+2017-12-24 23:24:32	snugglebitch	i found a clean/dirty dishwasher magnet that says yay if it's clean and eww if it's dirty
+2017-12-24 23:24:37	snugglebitch	should i buy 50 of them?
+2017-12-24 23:24:50	circly	maybe not
+2017-12-24 23:24:56	snugglebitch	oh okay
+2017-12-24 23:25:07	circly	you're trying to save, remember?
+2017-12-24 23:25:21	snugglebitch	"wtf, the dishes are dirty" "omg, the dishes are clean"
+2017-12-24 23:25:30	snugglebitch	I'M TRYING TO SAVE MY SOUL WITH AMAZON PURCHASES
+2017-12-24 23:25:37	circly	leave your soul alone
+2017-12-24 23:25:55	snugglebitch	dude they have one with bernie sanders being clean and hilary clinton being dirty
+2017-12-24 23:25:57	snugglebitch	i'm so confused
+2017-12-24 23:26:01	<--	enterprisey (~enterpris@wikipedia/enterprisey) has quit (Ping timeout: 265 seconds)
+2017-12-24 23:26:15	circly	at work we have a piece of paper with "please do not open, i am on" printed on it for the dishwasher
+2017-12-24 23:26:27	snugglebitch	yes that is important
+2017-12-24 23:26:34	circly	someone edited it to say "please open, i am turned on"
+2017-12-24 23:26:39	snugglebitch	hahahahahahaha
+2017-12-24 23:27:15	circly	some ppl never grow up
+2017-12-24 23:28:04	justache	https://i.imgur.com/mDIxHFs.png
+2017-12-24 23:28:51	snugglebitch	https://images-na.ssl-images-amazon.com/images/I/91f4dTCHCvL._AC_SR300,500_.jpg
+2017-12-24 23:28:59	circly	is that real?
+2017-12-24 23:29:07	circly	it seems like a parody of fox
+2017-12-24 23:29:11	circly	but .. poe's law
+2017-12-24 23:29:31	circly	snugglebitch: ?_? 
+2017-12-24 23:29:45	 *	snugglebitch giggles
+2017-12-24 23:30:40	+peaches	.yt why iii love the moon
+2017-12-24 23:30:41	+reddit-bot	(peaches) Phony Ppl - Why iii Love the Moon. - length 5m 32s - 63,187 likes, 545 dislikes (99.1%) - 2,604,352 views - the $toned ape on 2015.01.30 - http://youtu.be/0Y6Uy_-hJRQ
+2017-12-24 23:31:30	snugglebitch	circly, what if the hippo head was made out of cardboard instead
+2017-12-24 23:31:37	snugglebitch	pls respond, this is important
+2017-12-24 23:31:51	circly	ill hang it up in my garage
+2017-12-24 23:31:55	snugglebitch	oh good
+2017-12-24 23:32:06	tacoinanus	m[at]: I stuffed it with onion, garlic, and lemon
+2017-12-24 23:32:18	Delver	mr_yogurt, please research before you buy anything

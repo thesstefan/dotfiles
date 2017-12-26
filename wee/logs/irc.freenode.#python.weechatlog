@@ -1,0 +1,551 @@
+2017-12-03 15:12:27	default	the_fine_man (~the_fine_@95.76.56.90) has joined #python
+2017-12-03 15:12:27	--	Topic for #python is "Don't paste, use https://paste.pound-python.org/ | http://bit.ly/psf-coc | Tutorial: http://bit.ly/MCAhYx | New programmer? http://bit.ly/23X7emF | Find your local User Group: http://goo.gl/S1Zsq | #python-fr #python.de #python-es #python.tw #python-br #python-nl #python-ir #python.it #python-ro #python-india #python-hu #python-dk"
+2017-12-03 15:12:27	--	Topic set by papna on Mon, 30 Oct 2017 20:33:31
+2017-12-03 15:12:28	--	Channel #python: 1909 nicks (0 ops, 0 voices, 1909 normals)
+2017-12-03 15:12:29	--	Channel created on Sun, 26 Nov 2006 08:42:41
+2017-12-03 15:12:30	default	pachewise (~pachewise@64.78.245.83) has joined #python
+2017-12-03 15:13:14	default	ZyX-I (~ZyX-I@broadband-77-37-230-77.moscow.rt.ru) has joined #python
+2017-12-03 15:13:43	<--	ravndal (~weechat@unaffiliated/ravndal) has quit (Quit: WeeChat 1.9.1)
+2017-12-03 15:15:14	default	azur_kind (~azur_kind@80-218-34-158.dclient.hispeed.ch) has joined #python
+2017-12-03 15:15:21	default	ravndal (~weechat@unaffiliated/ravndal) has joined #python
+2017-12-03 15:16:07	default	Wrobel (~Thunderbi@85-222-88-22.dynamic.chello.pl) has joined #python
+2017-12-03 15:16:33	tech2	acresearch: print(doc.xpath("//a[normalize-space(preceding-sibling::text()) = 'DOI:']/text()")) (after doing the requests and fromstring bit as per before)
+2017-12-03 15:16:37	default	Lorduncan (~Thunderbi@static-155-130-224-77.ipcom.comunitel.net) has joined #python
+2017-12-03 15:16:38	go|dfish	acresearch: the DOI is in the last <p> tag of each article
+2017-12-03 15:17:06	v0idpwn	                                                                                                                                                                                                                                                                                                                                                                                                                         
+2017-12-03 15:17:12	v0idpwn	                                                                                                                                                                                                                                                                                                                                                                                                                         
+2017-12-03 15:17:15	<--	Lorduncan (~Thunderbi@static-155-130-224-77.ipcom.comunitel.net) has quit (Read error: Connection reset by peer)
+2017-12-03 15:17:18	<--	pachewise (~pachewise@64.78.245.83) has quit (Ping timeout: 260 seconds)
+2017-12-03 15:17:18	<--	WindChimes (~WindChime@unaffiliated/windchimes) has quit (Ping timeout: 260 seconds)
+2017-12-03 15:17:18	v0idpwn	                                                                                                                                                                                                                                                                                                                                                                                                                         
+2017-12-03 15:17:24	v0idpwn	                                                                                                                                                                                                                                                                                                                                                                                                                         
+2017-12-03 15:17:30	v0idpwn	                                                                                                                                                                                                                                                                                                                                                                                                                         
+2017-12-03 15:17:36	v0idpwn	                                                                                                                                                                                                                                                                                                                                                                                                                         
+2017-12-03 15:17:42	v0idpwn	                                                                                                                                                                                                                                                      
+2017-12-03 15:17:59	acresearch	go|dfish: how do i isolate it?
+2017-12-03 15:18:56	default	xliiv (~xliiv@d218-180.icpnet.pl) has joined #python
+2017-12-03 15:19:13	nedbat	v0idpwn: everything ok?
+2017-12-03 15:19:52	default	chargen (~chargen@240.148.21.95.dynamic.jazztel.es) has joined #python
+2017-12-03 15:20:24	tech2	acresearch: https://paste.pound-python.org/show/k3o6WRhNT2KlmzJurcVf/
+2017-12-03 15:20:43	<--	wxg4irc (~wxg@unaffiliated/wxg4irc) has quit (Quit: WeeChat 1.9.1)
+2017-12-03 15:20:44	<--	FACILITY_GUY (~FACILITY_@unaffiliated/facility-guy/x-2349873) has quit (Remote host closed the connection)
+2017-12-03 15:21:02	--	Nadelikbrednyas is now known as Nadelikbrednyas|
+2017-12-03 15:21:06	default	rkta (~kt@p5DF52792.dip0.t-ipconnect.de) has joined #python
+2017-12-03 15:21:23	<--	senaps (25627232@gateway/web/cgi-irc/kiwiirc.com/ip.37.98.114.50) has quit (Remote host closed the connection)
+2017-12-03 15:21:25	<--	Nadelikbrednyas| (~Client@unaffiliated/dysklyver) has left #python ("Leaving")
+2017-12-03 15:21:45	acresearch	tech2: interesting, i get a []
+2017-12-03 15:21:55	acresearch	tech2: wait wait
+2017-12-03 15:22:16	acresearch	tech2: works    nice  thanks
+2017-12-03 15:23:26	default	Planet_EN (~planet_en@94.200.39.6) has joined #python
+2017-12-03 15:23:33	tech2	acresearch: get the `a` tag which has test before it of DOI: and show me the text of the `a` tag. XPath is a bit of an acquired taste though, like regex, xslt, etc.
+2017-12-03 15:23:59	tech2	s/test/text/
+2017-12-03 15:24:42	acresearch	tech2: i get a nice list of DOIs
+2017-12-03 15:24:53	default	space-wizard (~space-wiz@c-73-24-174-26.hsd1.az.comcast.net) has joined #python
+2017-12-03 15:25:12	tech2	That's what you wanted, right?
+2017-12-03 15:26:41	tech2	Anyway, gotta go for now. Good luck with the remainder acresearch.
+2017-12-03 15:26:43	default	m92 (~m92@93-86-85-38.dynamic.isp.telekom.rs) has joined #python
+2017-12-03 15:26:57	acresearch	tech2: thank you were great help :-)
+2017-12-03 15:27:29	<--	aditya_r (~adityaram@117.228.76.74) has quit (Ping timeout: 248 seconds)
+2017-12-03 15:28:56	nasusiro	guys, is there any website that is dedicated to Python success stories about any kind of business out there?
+2017-12-03 15:29:08	nasusiro	that is 100% Python company
+2017-12-03 15:29:18	nedbat	nasusiro: https://www.python.org/about/success/
+2017-12-03 15:29:36	nedbat	nasusiro: though i think these are kind of old
+2017-12-03 15:30:46	<--	azur_kind (~azur_kind@80-218-34-158.dclient.hispeed.ch) has quit (Remote host closed the connection)
+2017-12-03 15:30:51	default	bakirelived (~quassel@a94-133-145-79.cpe.netcabo.pt) has joined #python
+2017-12-03 15:31:41	<--	feksclaus (~feksclaus@80-71-131-204.u.parknet.dk) has quit (Ping timeout: 255 seconds)
+2017-12-03 15:31:46	<--	xtrntr (~Thunderbi@138.75.172.9) has quit (Ping timeout: 260 seconds)
+2017-12-03 15:31:55	default	godfath3r (~godfath3r@adsl-208.46.190.24.tellas.gr) has joined #python
+2017-12-03 15:33:00	default	sortaddsort (~archer@unaffiliated/remcwo9o) has joined #python
+2017-12-03 15:33:30	<--	guardianx (~guardian@120.17.21.25) has quit
+2017-12-03 15:34:23	<--	shantytown (~shantytow@2604:2000:f914:e600:f530:7b93:272b:388b) has quit (Ping timeout: 255 seconds)
+2017-12-03 15:34:30	default	hefe (~hefe@gateway/vpn/privateinternetaccess/hefe) has joined #python
+2017-12-03 15:34:49	default	greg_f (~greg@altlinux/developer/greg) has joined #python
+2017-12-03 15:34:51	default	bm371613 (~bartek@2a02:a317:603f:9800:391:ed9f:1c09:1285) has joined #python
+2017-12-03 15:34:53	<--	xavkno (~Xavkno@dhcp-089-099-034-132.chello.nl) has quit (Quit: My MacBook has gone to sleep. ZZZzzz?)
+2017-12-03 15:35:17	<--	adminseodwn (~archer@unaffiliated/remcwo9o) has quit (Ping timeout: 260 seconds)
+2017-12-03 15:35:32	nasusiro	thank you nedbat :)
+2017-12-03 15:36:39	default	the_rat (~the_rat@2a02:8109:8900:418:a0c4:9f98:7672:2e7f) has joined #python
+2017-12-03 15:36:40	<--	cdown (~cdown@my83-216-94-187.cust.relish.net) has quit (Remote host closed the connection)
+2017-12-03 15:36:57	default	cdown (~cdown@my83-216-94-187.cust.relish.net) has joined #python
+2017-12-03 15:38:15	default	m8 (~m8@unaffiliated/m8) has joined #python
+2017-12-03 15:38:43	default	xavkno (~Xavkno@dhcp-089-099-034-132.chello.nl) has joined #python
+2017-12-03 15:39:03	<--	itdependsnetwork (~textual@pool-173-70-167-222.nwrknj.fios.verizon.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz?)
+2017-12-03 15:39:19	default	goepsilongo (~textual@2604:2000:6ac2:2c00:f556:3c1a:c017:3c65) has joined #python
+2017-12-03 15:39:24	v0idpwn	                                                  
+2017-12-03 15:39:42	<--	Belxjander (~Belxjande@sourcemage/Mage/Abh-Elementalist) has quit (Ping timeout: 260 seconds)
+2017-12-03 15:39:57	default	xtrntr (~Thunderbi@138.75.172.9) has joined #python
+2017-12-03 15:40:41	<--	mossman93 (~mossman93@unaffiliated/mossman93) has quit (Ping timeout: 255 seconds)
+2017-12-03 15:40:42	default	stranac (~stranac@93-143-183-206.adsl.net.t-com.hr) has joined #python
+2017-12-03 15:40:42	default	Belxjander (~Belxjande@sourcemage/Mage/Abh-Elementalist) has joined #python
+2017-12-03 15:40:51	<--	BeerLover (~BeerBuddy@27.56.174.155) has quit (Quit: My MacBook Air has gone to sleep. ZZZzzz?)
+2017-12-03 15:41:30	default	mossman93 (~mossman93@unaffiliated/mossman93) has joined #python
+2017-12-03 15:41:34	<--	the_rat (~the_rat@2a02:8109:8900:418:a0c4:9f98:7672:2e7f) has quit (Ping timeout: 260 seconds)
+2017-12-03 15:42:25	default	pyfoo (~pyfoo@gateway/vpn/privateinternetaccess/pyfoo) has joined #python
+2017-12-03 15:42:29	<--	canarts (~stranac@93-141-153-31.adsl.net.t-com.hr) has quit (Ping timeout: 255 seconds)
+2017-12-03 15:42:40	default	loader (~loader@81.19.4.181) has joined #python
+2017-12-03 15:42:57	--	datapleco is now known as Rue
+2017-12-03 15:43:29	<--	kishore96 (~kishore@103.65.196.10) has quit (Ping timeout: 248 seconds)
+2017-12-03 15:44:02	<--	WanSan (d99762a3@gateway/web/freenode/ip.217.151.98.163) has quit (Quit: Page closed)
+2017-12-03 15:44:37	default	rpkilby (~rpkilby@cpe-76-182-45-76.nc.res.rr.com) has joined #python
+2017-12-03 15:45:06	default	BeerLover (~BeerBuddy@27.56.174.155) has joined #python
+2017-12-03 15:45:27	default	Bahrouz (~Bahrouz@unaffiliated/bahrouz) has joined #python
+2017-12-03 15:46:03	default	s2s2s (~s@host109-147-194-74.range109-147.btcentralplus.com) has joined #python
+2017-12-03 15:46:18	default	halvor (~halvor@178-164-220-31.pool.digikabel.hu) has joined #python
+2017-12-03 15:46:39	default	__charly__ (~charly@2605:a601:41f3:f300:dda:8bce:8f2d:65ff) has joined #python
+2017-12-03 15:46:46	default	itdependsnetwork (~textual@pool-173-70-167-222.nwrknj.fios.verizon.net) has joined #python
+2017-12-03 15:46:54	default	iFlip721 (~iFllip721@184-155-111-88.cpe.cableone.net) has joined #python
+2017-12-03 15:46:58	default	pachewise (~pachewise@64.78.245.83) has joined #python
+2017-12-03 15:47:39	<--	veek (~veek@unaffiliated/veek) has quit (Quit: Leaving)
+2017-12-03 15:49:06	<--	loader (~loader@81.19.4.181) has quit (Read error: Connection reset by peer)
+2017-12-03 15:49:21	<--	rpkilby (~rpkilby@cpe-76-182-45-76.nc.res.rr.com) has quit (Ping timeout: 248 seconds)
+2017-12-03 15:51:02	<--	halvor (~halvor@178-164-220-31.pool.digikabel.hu) has quit (Ping timeout: 255 seconds)
+2017-12-03 15:51:16	default	vuoto (~vuoto@80.71.142.118) has joined #python
+2017-12-03 15:51:29	<--	iFlip721 (~iFllip721@184-155-111-88.cpe.cableone.net) has quit (Ping timeout: 248 seconds)
+2017-12-03 15:51:59	<--	pachewise (~pachewise@64.78.245.83) has quit (Ping timeout: 248 seconds)
+2017-12-03 15:52:00	default	loader (~loader@81.19.4.181) has joined #python
+2017-12-03 15:52:04	default	imack (~imack@183.83.222.123) has joined #python
+2017-12-03 15:53:19	default	no742617000027 (~no7426170@2a02:8109:8a00:4d64:34f0:6097:7035:3816) has joined #python
+2017-12-03 15:53:33	default	BigJono (~BigJono@61-69-96-158.mel.static-ipl.aapt.com.au) has joined #python
+2017-12-03 15:53:56	default	geekodour08 (~geekodour@47.29.253.33) has joined #python
+2017-12-03 15:54:08	<--	geekodour08 (~geekodour@47.29.253.33) has quit (Read error: Connection reset by peer)
+2017-12-03 15:54:14	default	lastmanstanding (~arjoonn@111.92.51.209) has joined #python
+2017-12-03 15:55:13	<--	rkta (~kt@p5DF52792.dip0.t-ipconnect.de) has quit (Ping timeout: 248 seconds)
+2017-12-03 15:56:18	<--	BTRE (~BTRE@unaffiliated/btre) has quit (Quit: Leaving)
+2017-12-03 15:56:30	<--	loader (~loader@81.19.4.181) has quit (Ping timeout: 260 seconds)
+2017-12-03 15:56:52	default	nszceta (~adamgradz@99-23-37-112.lightspeed.hstntx.sbcglobal.net) has joined #python
+2017-12-03 15:57:26	default	BTRE (~BTRE@unaffiliated/btre) has joined #python
+2017-12-03 15:58:07	<--	Wrobel (~Thunderbi@85-222-88-22.dynamic.chello.pl) has quit (Quit: Wrobel)
+2017-12-03 15:58:14	<--	BigJono (~BigJono@61-69-96-158.mel.static-ipl.aapt.com.au) has quit (Ping timeout: 255 seconds)
+2017-12-03 15:58:56	default	geekodour08 (~geekodour@47.29.253.33) has joined #python
+2017-12-03 15:59:08	<--	oxalorg (~oxalorg@204.222.200.35.bc.googleusercontent.com) has quit (Remote host closed the connection)
+2017-12-03 15:59:35	<--	Fulgen (~Fulgen@46.124.112.60) has quit (Quit: Leaving)
+2017-12-03 15:59:50	default	Fulgen (~Fulgen@46.124.112.60) has joined #python
+2017-12-03 16:00:47	default	two2theheadPC0 (~RDaneelOl@unaffiliated/two2thehead) has joined #python
+2017-12-03 16:01:54	default	guerf (gb@sdbron9872w-lp140-01-64-229-152-29.dsl.bell.ca) has joined #python
+2017-12-03 16:02:49	default	contingo (~textual@cpc82355-lewi18-2-0-cust128.2-4.cable.virginm.net) has joined #python
+2017-12-03 16:03:33	<--	pyfoo (~pyfoo@gateway/vpn/privateinternetaccess/pyfoo) has quit (Quit: Leaving)
+2017-12-03 16:03:55	<--	hefe (~hefe@gateway/vpn/privateinternetaccess/hefe) has quit (Quit: Leaving)
+2017-12-03 16:04:25	<--	chargen (~chargen@240.148.21.95.dynamic.jazztel.es) has quit (Quit: BBL)
+2017-12-03 16:04:33	<--	sanchexm (~dubdub@c-73-0-25-171.hsd1.fl.comcast.net) has quit (Remote host closed the connection)
+2017-12-03 16:04:51	default	Sasan (~Sasan@unaffiliated/sasan) has joined #python
+2017-12-03 16:05:00	<--	Sasan (~Sasan@unaffiliated/sasan) has quit (Read error: Connection reset by peer)
+2017-12-03 16:05:30	default	hefe1 (~hefe@gateway/vpn/privateinternetaccess/hefe) has joined #python
+2017-12-03 16:05:41	<--	hefe1 (~hefe@gateway/vpn/privateinternetaccess/hefe) has quit (Read error: Connection reset by peer)
+2017-12-03 16:05:42	rud0lf	i wonder.. hexchat allows for python plugins, but does it require for python to be installed in os?
+2017-12-03 16:05:53	rud0lf	or is it possible to make it standalone?
+2017-12-03 16:07:15	default	Nizumzen (~Nizumzen@cpc120314-reig6-2-0-cust190.6-3.cable.virginm.net) has joined #python
+2017-12-03 16:07:24	default	nazarewk (~nazarewk@89-65-91-22.dynamic.chello.pl) has joined #python
+2017-12-03 16:07:36	<--	xtrntr (~Thunderbi@138.75.172.9) has quit (Quit: xtrntr)
+2017-12-03 16:08:23	<--	xavkno (~Xavkno@dhcp-089-099-034-132.chello.nl) has quit (Quit: My MacBook has gone to sleep. ZZZzzz?)
+2017-12-03 16:08:43	default	TimJay (~tim@188.113.92.132) has joined #python
+2017-12-03 16:08:48	nasusiro	rud0lf: go to Window > Plugins and Scripts
+2017-12-03 16:08:54	nasusiro	this will answer your question ;)
+2017-12-03 16:08:59	rud0lf	thanks
+2017-12-03 16:09:14	default	snatcher (~user@gateway/tor-sasl/snatcher) has joined #python
+2017-12-03 16:09:33	rud0lf	wow
+2017-12-03 16:09:41	rud0lf	it's just a python.so
+2017-12-03 16:09:45	nasusiro	yep
+2017-12-03 16:10:50	<--	captJrod (~captJrod@2405:204:9000:ec3e:c43d:562e:2fe0:701c) has quit (Ping timeout: 255 seconds)
+2017-12-03 16:11:04	<--	jcjf (AdiIRC@106-68-209-85.dyn.iinet.net.au) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2017-12-03 16:11:18	snatcher	is there a way to parse/save comments with configparser?
+2017-12-03 16:11:41	default	xavkno (~Xavkno@dhcp-089-099-034-132.chello.nl) has joined #python
+2017-12-03 16:12:42	<--	minip (~minip@unaffiliated/minip) has quit (Remote host closed the connection)
+2017-12-03 16:14:09	default	WindChimes (~WindChime@unaffiliated/windchimes) has joined #python
+2017-12-03 16:14:16	default	subho (~subho@fedora/subho) has joined #python
+2017-12-03 16:14:57	<--	nazarewk (~nazarewk@89-65-91-22.dynamic.chello.pl) has quit (Ping timeout: 248 seconds)
+2017-12-03 16:16:10	default	mefistofeles (~mefistofe@unaffiliated/mefistofeles) has joined #python
+2017-12-03 16:16:24	default	Seni (~Seni@cpc91218-cmbg18-2-0-cust107.5-4.cable.virginm.net) has joined #python
+2017-12-03 16:16:28	default	Foxyloxy (~Foxyloxy@cpc106551-shef14-2-0-cust97.17-1.cable.virginm.net) has joined #python
+2017-12-03 16:17:02	<--	steenman (~steenman@host86-184-119-106.range86-184.btcentralplus.com) has quit (Ping timeout: 260 seconds)
+2017-12-03 16:17:03	<--	geekodour08 (~geekodour@47.29.253.33) has quit (Read error: Connection reset by peer)
+2017-12-03 16:17:51	default	geekodour08 (~geekodour@47.29.253.33) has joined #python
+2017-12-03 16:18:05	default	dtzitz (~dtzitz@unaffiliated/dtzitz) has joined #python
+2017-12-03 16:18:26	default	parabolize (~paraboliz@c-75-71-247-61.hsd1.co.comcast.net) has joined #python
+2017-12-03 16:19:13	default	BSabo (~BSaboia@177.206.167.209.dynamic.adsl.gvt.net.br) has joined #python
+2017-12-03 16:19:28	default	mercipher (~mercipher@gateway/vpn/privateinternetaccess/mercipher) has joined #python
+2017-12-03 16:19:52	default	chargen (~chargen@240.148.21.95.dynamic.jazztel.es) has joined #python
+2017-12-03 16:20:55	default	pachewise (~pachewise@64.78.245.83) has joined #python
+2017-12-03 16:21:41	default	BSaboia (~BSaboia@177.206.167.209.dynamic.adsl.gvt.net.br) has joined #python
+2017-12-03 16:21:49	default	miskatonic (~user@ipbcc0c915.dynamic.kabel-deutschland.de) has joined #python
+2017-12-03 16:22:34	nedbat	snatcher: i don't think so
+2017-12-03 16:23:05	default	dieggsy (~user@unaffiliated/diegs/x-9438211) has joined #python
+2017-12-03 16:23:05	default	snf_gh (~snf_gh@95.155.114.211) has joined #python
+2017-12-03 16:23:08	<--	BSab (~BSaboia@177.206.167.209.dynamic.adsl.gvt.net.br) has quit (Ping timeout: 268 seconds)
+2017-12-03 16:23:10	default	bmurt (~hmm@pool-68-131-65-53.nrflva.fios.verizon.net) has joined #python
+2017-12-03 16:24:05	<--	s2s2s (~s@host109-147-194-74.range109-147.btcentralplus.com) has quit (Ping timeout: 240 seconds)
+2017-12-03 16:24:07	<--	vuoto (~vuoto@80.71.142.118) has quit (Remote host closed the connection)
+2017-12-03 16:24:30	<--	BSabo (~BSaboia@177.206.167.209.dynamic.adsl.gvt.net.br) has quit (Ping timeout: 260 seconds)
+2017-12-03 16:24:35	<--	barmaley (~barmaley@94.228.207.169) has quit (Ping timeout: 255 seconds)
+2017-12-03 16:24:51	default	BSab (~BSaboia@177.206.167.209.dynamic.adsl.gvt.net.br) has joined #python
+2017-12-03 16:25:35	<--	Volis (uid12493@gateway/web/irccloud.com/x-lmneguyozqfgkoqw) has quit (Quit: Connection closed for inactivity)
+2017-12-03 16:25:43	default	BSabo (~BSaboia@177.206.167.209.dynamic.adsl.gvt.net.br) has joined #python
+2017-12-03 16:25:52	<--	Hydrastra (~LUX@240f:2:780a:1:29b0:d655:8ba:a68) has quit (Quit: ????)
+2017-12-03 16:25:53	default	Cuby96 (~Cuby96@62.68.12.184) has joined #python
+2017-12-03 16:25:54	<--	pachewise (~pachewise@64.78.245.83) has quit (Ping timeout: 260 seconds)
+2017-12-03 16:25:55	<--	lastmanstanding (~arjoonn@111.92.51.209) has quit (Quit: leaving)
+2017-12-03 16:26:30	Cuby96	Hi, someone knows how to use a mcp23017
+2017-12-03 16:26:39	default	lastmanstanding (~arjoonn@111.92.51.209) has joined #python
+2017-12-03 16:27:27	<--	WindChimes (~WindChime@unaffiliated/windchimes) has quit (Ping timeout: 240 seconds)
+2017-12-03 16:27:51	mefistofeles	Cuby96: try ##electronics maybe
+2017-12-03 16:28:13	default	vuoto (~vuoto@80.71.142.118) has joined #python
+2017-12-03 16:28:30	<--	basiclaser (uid10861@gateway/web/irccloud.com/x-cawpiupnagbdkomn) has quit (Quit: Connection closed for inactivity)
+2017-12-03 16:28:49	<--	BSaboia (~BSaboia@177.206.167.209.dynamic.adsl.gvt.net.br) has quit (Ping timeout: 248 seconds)
+2017-12-03 16:29:01	<--	yurb (yurb@wikipedia/Yuriy-Bulka) has left #python ("WeeChat 1.9.1")
+2017-12-03 16:29:01	Cuby96	Just did
+2017-12-03 16:29:03	default	Daerist (~Daerist@LFbn-1-10600-169.w90-89.abo.wanadoo.fr) has joined #python
+2017-12-03 16:29:23	<--	vuoto (~vuoto@80.71.142.118) has quit (Remote host closed the connection)
+2017-12-03 16:29:27	<--	BSab (~BSaboia@177.206.167.209.dynamic.adsl.gvt.net.br) has quit (Ping timeout: 240 seconds)
+2017-12-03 16:29:34	<--	xavkno (~Xavkno@dhcp-089-099-034-132.chello.nl) has quit (Quit: My MacBook has gone to sleep. ZZZzzz?)
+2017-12-03 16:30:14	default	matt3o12 (~matt3o12@178.189.16.102) has joined #python
+2017-12-03 16:30:35	<--	Nilesh_ (uid116340@gateway/web/irccloud.com/x-bhslqjpqtztykmce) has quit (Quit: Connection closed for inactivity)
+2017-12-03 16:30:40	<--	dieggsy (~user@unaffiliated/diegs/x-9438211) has quit (Remote host closed the connection)
+2017-12-03 16:30:48	<--	chargen (~chargen@240.148.21.95.dynamic.jazztel.es) has quit (Quit: BBL)
+2017-12-03 16:31:21	default	Elon_Satoshi (~elonsatos@unaffiliated/elon-satoshi/x-2794555) has joined #python
+2017-12-03 16:31:24	<--	bm371613 (~bartek@2a02:a317:603f:9800:391:ed9f:1c09:1285) has quit (Quit: Konversation terminated!)
+2017-12-03 16:31:29	<--	xliiv (~xliiv@d218-180.icpnet.pl) has quit (Ping timeout: 248 seconds)
+2017-12-03 16:31:41	<--	neiluj (~neiluj@unaffiliated/neiluj) has quit (Ping timeout: 240 seconds)
+2017-12-03 16:32:15	default	zhalla_ (~zhalla@bl12-149-105.dsl.telepac.pt) has joined #python
+2017-12-03 16:32:40	default	chargen (~chargen@240.148.21.95.dynamic.jazztel.es) has joined #python
+2017-12-03 16:32:59	<--	Planet_EN (~planet_en@94.200.39.6) has quit (Quit: My MacBook has gone to sleep. ZZZzzz?)
+2017-12-03 16:33:19	default	boojinks (~ben@host-92-0-62-29.as43234.net) has joined #python
+2017-12-03 16:33:41	default	aditya_r (~adityaram@117.228.12.74) has joined #python
+2017-12-03 16:33:49	<--	chargen (~chargen@240.148.21.95.dynamic.jazztel.es) has quit (Client Quit)
+2017-12-03 16:35:20	default	sanchexm (~dubdub@c-73-0-25-171.hsd1.fl.comcast.net) has joined #python
+2017-12-03 16:36:34	<--	zhalla_ (~zhalla@bl12-149-105.dsl.telepac.pt) has quit (Client Quit)
+2017-12-03 16:36:38	default	barmaley (~barmaley@94.228.207.217) has joined #python
+2017-12-03 16:36:38	<--	rorro (~rorro@h-170-152-58.A163.priv.bahnhof.se) has quit (Ping timeout: 260 seconds)
+2017-12-03 16:37:07	MrElendig	Cuby96: eevblog forum/irc channel
+2017-12-03 16:37:22	MrElendig	and define "use"
+2017-12-03 16:37:51	default	coco (~coco@84-74-76-240.dclient.hispeed.ch) has joined #python
+2017-12-03 16:38:02	MrElendig	Cuby96: and ofcourse: https://www.microchip.com/wwwproducts/en/MCP23017
+2017-12-03 16:39:19	<--	barmaley (~barmaley@94.228.207.217) has quit (Client Quit)
+2017-12-03 16:39:54	<--	sanchexm (~dubdub@c-73-0-25-171.hsd1.fl.comcast.net) has quit (Ping timeout: 260 seconds)
+2017-12-03 16:39:58	default	chargen (~chargen@240.148.21.95.dynamic.jazztel.es) has joined #python
+2017-12-03 16:40:50	default	loader (~loader@81.19.4.181) has joined #python
+2017-12-03 16:41:12	default	iFlip721 (~iFllip721@184-155-111-88.cpe.cableone.net) has joined #python
+2017-12-03 16:43:23	<--	subho (~subho@fedora/subho) has quit (Quit: laptop going to sleep. ZZZzzz?)
+2017-12-03 16:43:40	default	Xaldafax (~Xaldafax@cpe-104-35-100-124.socal.res.rr.com) has joined #python
+2017-12-03 16:44:29	default	xavkno (~Xavkno@dhcp-089-099-034-132.chello.nl) has joined #python
+2017-12-03 16:44:31	default	DeepChill (~BFB@c-66-41-63-51.hsd1.mn.comcast.net) has joined #python
+2017-12-03 16:44:38	default	wesclemens (~wesclemen@c-71-201-40-243.hsd1.il.comcast.net) has joined #python
+2017-12-03 16:44:57	<--	dtzitz (~dtzitz@unaffiliated/dtzitz) has quit (Ping timeout: 240 seconds)
+2017-12-03 16:45:00	<--	al2o3-cr (~al2o3-cr@unaffiliated/gr33n7007h) has quit (Quit: ?????????????)
+2017-12-03 16:45:20	default	rpkilby (~rpkilby@cpe-76-182-45-76.nc.res.rr.com) has joined #python
+2017-12-03 16:45:23	default	qpdb (~qpdb@unaffiliated/qpdb) has joined #python
+2017-12-03 16:45:43	<--	iFlip721 (~iFllip721@184-155-111-88.cpe.cableone.net) has quit (Ping timeout: 250 seconds)
+2017-12-03 16:46:08	default	lightbulb (49d96f2e@gateway/web/freenode/ip.73.217.111.46) has joined #python
+2017-12-03 16:46:18	default	tiwula (~lane@174-23-3-126.slkc.qwest.net) has joined #python
+2017-12-03 16:46:50	<--	imack (~imack@183.83.222.123) has quit (Ping timeout: 255 seconds)
+2017-12-03 16:47:15	default	Vornicus (~Vorn@cpe-104-32-37-233.socal.res.rr.com) has joined #python
+2017-12-03 16:47:27	<--	v0idpwn (~v0idpwn@189.58.203.111.dynamic.adsl.gvt.net.br) has quit (Ping timeout: 250 seconds)
+2017-12-03 16:49:30	default	spacepup (~spacepup@pool-71-163-32-238.washdc.fios.verizon.net) has joined #python
+2017-12-03 16:49:48	<--	rpkilby (~rpkilby@cpe-76-182-45-76.nc.res.rr.com) has quit (Ping timeout: 255 seconds)
+2017-12-03 16:49:51	<--	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has quit (Quit: YuGiOhJCJ)
+2017-12-03 16:50:20	default	tuxiano (~tuxiano@2a02:8070:898a:3500:6a05:caff:fe55:714d) has joined #python
+2017-12-03 16:50:31	default	Student11 (81f22ec4@gateway/web/freenode/ip.129.242.46.196) has joined #python
+2017-12-03 16:50:58	Student11	Quick question, what does this mean? https://paste.pound-python.org/show/shktcKiUbWezjoegu3vB/
+2017-12-03 16:51:04	Student11	indented block"
+2017-12-03 16:51:07	default	Diemuzi (~IceChat9@unaffiliated/diemuzi) has joined #python
+2017-12-03 16:51:20	<--	bmurt (~hmm@pool-68-131-65-53.nrflva.fios.verizon.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz?)
+2017-12-03 16:51:58	default	neiluj (~neiluj@unaffiliated/neiluj) has joined #python
+2017-12-03 16:51:59	<--	spacepup (~spacepup@pool-71-163-32-238.washdc.fios.verizon.net) has quit (Quit: leaving)
+2017-12-03 16:52:03	default	s2s2s (~s@host109-147-194-74.range109-147.btcentralplus.com) has joined #python
+2017-12-03 16:52:54	default	bmurt (~hmm@pool-68-131-65-53.nrflva.fios.verizon.net) has joined #python
+2017-12-03 16:53:01	default	spacepup (~spacepup@pool-71-163-32-238.washdc.fios.verizon.net) has joined #python
+2017-12-03 16:53:30	<--	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Quit: WeeChat 1.9.1)
+2017-12-03 16:54:03	<--	xavkno (~Xavkno@dhcp-089-099-034-132.chello.nl) has quit (Quit: My MacBook has gone to sleep. ZZZzzz?)
+2017-12-03 16:54:25	mefistofeles	Student11: paste the complete code, please
+2017-12-03 16:55:16	Student11	https://paste.pound-python.org/show/VYf2qcQP0K88yAeT5clT/
+2017-12-03 16:55:24	Student11	its d) creating the nested lists
+2017-12-03 16:55:35	default	feksclaus (~feksclaus@80-71-131-204.u.parknet.dk) has joined #python
+2017-12-03 16:56:22	mefistofeles	Student11: you have an error in 16-17
+2017-12-03 16:56:31	mefistofeles	you have to  put something inside the for loop
+2017-12-03 16:56:44	mefistofeles	that's why it's expecting an indented block afterwards
+2017-12-03 16:56:51	default	CAPITANOOO (~CAPITANOO@static-006.137-192-185.it-speednet.it) has joined #python
+2017-12-03 16:56:57	default	TidB (~TidB@pD95D4EC2.dip0.t-ipconnect.de) has joined #python
+2017-12-03 16:56:58	default	dtzitz (~dtzitz@unaffiliated/dtzitz) has joined #python
+2017-12-03 16:57:31	<--	chargen (~chargen@240.148.21.95.dynamic.jazztel.es) has quit (Quit: BBL)
+2017-12-03 16:57:37	<--	plutoniix (~q@node-3g5.pool-125-25.dynamic.totbb.net) has quit (Ping timeout: 248 seconds)
+2017-12-03 16:57:40	Student11	hm. line 16 done exactly what i want it to do tho. its just when i go down to line 21 its a problem
+2017-12-03 16:57:51	default	pachewise (~pachewise@64.78.245.83) has joined #python
+2017-12-03 16:57:55	mefistofeles	Student11: no, it's wrong
+2017-12-03 16:57:58	mefistofeles	for blabla:
+2017-12-03 16:58:02	mefistofeles	that's a wrong statement
+2017-12-03 16:58:07	default	onca (~user@unaffiliated/osolus) has joined #python
+2017-12-03 16:58:24	mefistofeles	Student11: either uncomment the line 17, or comment line 16
+2017-12-03 16:58:29	mefistofeles	or do something with that for!
+2017-12-03 16:59:06	InPhase	Student11: A programming rule:  Syntax errors often start at the last command BEFORE the one giving the error.  Always check there.
+2017-12-03 16:59:12	<--	akurniawan (~akurniawa@139.192.59.172) has quit (Quit: My MacBook has gone to sleep. ZZZzzz?)
+2017-12-03 16:59:22	onca	I've been playing with libzfs python module but cannot seem to get it to list each zfs volume's partitions. Should I just system commands to get this information?
+2017-12-03 16:59:24	<--	spacepup (~spacepup@pool-71-163-32-238.washdc.fios.verizon.net) has quit (Quit: leaving)
+2017-12-03 16:59:40	Student11	Ah it worked! But how come? why does the print function even mess around when I am calling for the zip(xyz) ?
+2017-12-03 17:00:20	<--	aditya_r (~adityaram@117.228.12.74) has quit (Ping timeout: 255 seconds)
+2017-12-03 17:00:25	default	nodeal (~nodeal@unaffiliated/nodeal) has joined #python
+2017-12-03 17:01:02	default	KeyJoo (~keyjoo@62.176.8.31) has joined #python
+2017-12-03 17:01:10	default	subho (~subho@fedora/subho) has joined #python
+2017-12-03 17:01:15	Angry98	https://paste.pound-python.org/show/kfGSxxsborjs0LZoSJyq/
+2017-12-03 17:01:16	stranac	Student11, you need code inside a for loop, without it it's not valid code
+2017-12-03 17:01:21	Angry98	is there any way to do that in 1 line
+2017-12-03 17:01:40	default	discovered (~discovere@unaffiliated/discovered) has joined #python
+2017-12-03 17:01:52	stranac	Angry98, isn't it ugly enough as is?
+2017-12-03 17:01:56	<--	inaki (~inaki@181.164.143.248) has quit (Ping timeout: 255 seconds)
+2017-12-03 17:02:18	<--	neiluj (~neiluj@unaffiliated/neiluj) has quit (Ping timeout: 260 seconds)
+2017-12-03 17:02:35	<--	pachewise (~pachewise@64.78.245.83) has quit (Ping timeout: 255 seconds)
+2017-12-03 17:02:35	Angry98	stranac, its never ugly enough
+2017-12-03 17:02:37	default	chocoelho (~Thunderbi@2804:14d:5491:8265:5ec9:d3ff:fe6d:f81f) has joined #python
+2017-12-03 17:02:40	Student11	well I am coding inside the loop? but simply uncommenting the print from earlier fixed everything. I didnt think print would effect anything in the code. I figured it was only an "out"
+2017-12-03 17:03:04	default	spacepup (~spacepup@pool-71-163-32-238.washdc.fios.verizon.net) has joined #python
+2017-12-03 17:03:18	<--	chocoelho (~Thunderbi@2804:14d:5491:8265:5ec9:d3ff:fe6d:f81f) has quit (Client Quit)
+2017-12-03 17:03:31	default	cpt-oblivious_ (~quassel@freebsd/user/cpt-oblivious) has joined #python
+2017-12-03 17:03:55	stranac	Student11, if you remove line 17 (or comment it out), nothing is left inside your loop, and that's not allowed
+2017-12-03 17:03:58	default	aditya_r (~adityaram@117.233.10.176) has joined #python
+2017-12-03 17:04:01	default	chargen (~chargen@240.148.21.95.dynamic.jazztel.es) has joined #python
+2017-12-03 17:04:43	Student11	Oh yeah ofcourse!
+2017-12-03 17:04:47	Student11	daa stupid
+2017-12-03 17:04:56	Student11	Thanks people! :)
+2017-12-03 17:05:22	default	Gustavo6046 (~Gustavo60@unaffiliated/gustavo6046) has joined #python
+2017-12-03 17:05:41	<--	cpt-oblivious (~quassel@freebsd/user/cpt-oblivious) has quit (Ping timeout: 268 seconds)
+2017-12-03 17:05:49	default	neiluj (~neiluj@unaffiliated/neiluj) has joined #python
+2017-12-03 17:06:02	<--	toxync04 (~toxync04@36.102.210.243) has quit (Ping timeout: 260 seconds)
+2017-12-03 17:06:36	stranac	Angry98, just because i am evil: for a in iter(lambda: input("what word u tryna get???? "), ''): print(sum([ord(letter) for letter in a.lower()]),"\n")
+2017-12-03 17:07:12	stranac	Angry98, you could probably do worse if you tried
+2017-12-03 17:07:15	default	inaki (~inaki@181.164.143.248) has joined #python
+2017-12-03 17:08:19	Angry98	stranac, lol thanks & i doubt it
+2017-12-03 17:08:36	matt3o12	Can anyone tell me how typehints for chained methods work? I get a name error (`NameError: name 'MyTest' is not defined) when I try to run this code: https://paste.pound-python.org/show/iv3A3MLrJK6imxN91rQs/
+2017-12-03 17:08:45	<--	tuxiano (~tuxiano@2a02:8070:898a:3500:6a05:caff:fe55:714d) has quit (Remote host closed the connection)
+2017-12-03 17:09:23	default	tuxiano (~tuxiano@2a02:8070:898a:3500:6a05:caff:fe55:714d) has joined #python
+2017-12-03 17:09:32	<--	bakirelived (~quassel@a94-133-145-79.cpe.netcabo.pt) has quit (Ping timeout: 240 seconds)
+2017-12-03 17:10:17	<--	CAPITANOOO (~CAPITANOO@static-006.137-192-185.it-speednet.it) has quit (Quit: CAPITANOOO)
+2017-12-03 17:10:38	<--	subho (~subho@fedora/subho) has quit (Quit: laptop going to sleep. ZZZzzz?)
+2017-12-03 17:11:22	<--	Rue (~datapleco@1-162-71-6.dynamic-ip.hinet.net) has quit (Quit: WeeChat 1.9.1)
+2017-12-03 17:12:48	oprypin	matt3o12, https://www.google.com/search?q=python+type+hint+return+self
+2017-12-03 17:14:09	matt3o12	oprypin: Thanks, didn?t occure to me to google. Duckduckgo is not quite there yet apparently ;) Appreciated very much :)
+2017-12-03 17:14:15	<--	Student11 (81f22ec4@gateway/web/freenode/ip.129.242.46.196) has quit (Ping timeout: 260 seconds)
+2017-12-03 17:14:15	default	xavkno (~Xavkno@dhcp-089-099-034-132.chello.nl) has joined #python
+2017-12-03 17:15:02	default	sanchexm (~dubdub@c-73-0-25-171.hsd1.fl.comcast.net) has joined #python
+2017-12-03 17:15:42	default	kuribas (~user@ptr-25vy0i8vgdvhc3j2s63.18120a2.ip6.access.telenet.be) has joined #python
+2017-12-03 17:15:55	<--	m92 (~m92@93-86-85-38.dynamic.isp.telekom.rs) has quit (Quit: My MacBook has gone to sleep. ZZZzzz?)
+2017-12-03 17:16:13	<--	miskatonic (~user@ipbcc0c915.dynamic.kabel-deutschland.de) has quit (Remote host closed the connection)
+2017-12-03 17:16:39	<--	lightbulb (49d96f2e@gateway/web/freenode/ip.73.217.111.46) has left #python
+2017-12-03 17:16:59	<--	neiluj (~neiluj@unaffiliated/neiluj) has quit (Ping timeout: 255 seconds)
+2017-12-03 17:17:05	default	toxync04 (~toxync04@36.102.210.227) has joined #python
+2017-12-03 17:18:18	mrr0butt	oprypin, http://bfy.tw/FMj3 :D
+2017-12-03 17:18:21	default	cstratak (~cstratak@2a00:1028:83a6:3102:41a7:a0c3:4f4:9c21) has joined #python
+2017-12-03 17:18:37	oprypin	you dont get it
+2017-12-03 17:19:10	default	neiluj (~neiluj@unaffiliated/neiluj) has joined #python
+2017-12-03 17:19:52	<--	sanchexm (~dubdub@c-73-0-25-171.hsd1.fl.comcast.net) has quit (Ping timeout: 268 seconds)
+2017-12-03 17:20:32	<--	DeepChill (~BFB@c-66-41-63-51.hsd1.mn.comcast.net) has quit (Ping timeout: 240 seconds)
+2017-12-03 17:20:35	default	damke (~damke@unaffiliated/damke) has joined #python
+2017-12-03 17:20:57	default	phanter (~hanckmann@ip119-249-211-87.adsl2.static.versatel.nl) has joined #python
+2017-12-03 17:20:58	<--	Bayangan (~Host@unaffiliated/bayangan) has quit (Ping timeout: 260 seconds)
+2017-12-03 17:21:20	default	unyu (~pyon@unaffiliated/pyon) has joined #python
+2017-12-03 17:21:41	<--	damke_ (~damke@unaffiliated/damke) has quit (Ping timeout: 240 seconds)
+2017-12-03 17:22:18	<--	fatigue (uid234588@gateway/web/irccloud.com/x-htktspkhxvhldryn) has quit (Quit: Connection closed for inactivity)
+2017-12-03 17:23:37	bjs	matt3o12: this isn't to do with type hints
+2017-12-03 17:23:44	bjs	I don't think
+2017-12-03 17:23:58	<--	acresearch (~acresearc@unaffiliated/acresearch) has quit (Quit: WeeChat 1.9.1)
+2017-12-03 17:24:05	bjs	matt3o12: what are you using to get that error?
+2017-12-03 17:24:38	bjs	matt3o12: oh I see, you need to say 'MyTest' on line 2
+2017-12-03 17:24:40	matt3o12	It is related to type hints and using a string fixed that.
+2017-12-03 17:24:53	matt3o12	But thank you anways :)
+2017-12-03 17:25:25	default	WindChimes (~WindChime@unaffiliated/windchimes) has joined #python
+2017-12-03 17:26:04	phanter	hi. I want to build a small project. This project does query an API at regular interval and controls some GPIO pins. I want to provide this project with a web-based gui (to change settings and view logs). I habve used Flask a lot, but I am not sure how to intergrate (for example) flask with a 'normal' application. Any pointers or ideas?
+2017-12-03 17:26:13	<--	xavkno (~Xavkno@dhcp-089-099-034-132.chello.nl) has quit (Quit: My MacBook has gone to sleep. ZZZzzz?)
+2017-12-03 17:26:36	default	shamloc (~Shamloc@173.239.195.23) has joined #python
+2017-12-03 17:27:01	default	xavkno (~Xavkno@dhcp-089-099-034-132.chello.nl) has joined #python
+2017-12-03 17:27:26	default	TeaPanda (~TeaPanda@unaffiliated/teapanda) has joined #python
+2017-12-03 17:27:59	<--	aditya_r (~adityaram@117.233.10.176) has quit (Ping timeout: 248 seconds)
+2017-12-03 17:28:01	bjs	matt3o12: when working with type hints it's a good idea to have PEP484 open and to search through it
+2017-12-03 17:28:20	<--	bmurt (~hmm@pool-68-131-65-53.nrflva.fios.verizon.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz?)
+2017-12-03 17:28:33	<--	Mayzie (~Maisie.is@unaffiliated/mayzie) has quit (Remote host closed the connection)
+2017-12-03 17:28:45	default	iFlip721 (~iFllip721@pool-74-110-180-3.rcmdva.fios.verizon.net) has joined #python
+2017-12-03 17:29:02	default	bmurt (~hmm@pool-68-131-65-53.nrflva.fios.verizon.net) has joined #python
+2017-12-03 17:29:10	<--	Cabanossi (~Cabanossi@p5B10ED2E.dip0.t-ipconnect.de) has quit (Ping timeout: 264 seconds)
+2017-12-03 17:29:27	default	dviola (~diego@unaffiliated/dviola) has joined #python
+2017-12-03 17:29:46	<--	mohabaks (~mohabaks@gateway/tor-sasl/mohabaks) has quit (Quit: WeeChat 1.9)
+2017-12-03 17:30:08	<--	DDR (~david@ec2.happyspork.com) has quit (Ping timeout: 258 seconds)
+2017-12-03 17:30:27	default	Cabanossi (~Cabanossi@p5B10ED2E.dip0.t-ipconnect.de) has joined #python
+2017-12-03 17:30:51	<--	ravndal (~weechat@unaffiliated/ravndal) has quit (Remote host closed the connection)
+2017-12-03 17:31:18	default	dan3wik (~dan2wik@unaffiliated/dan2wik) has joined #python
+2017-12-03 17:31:23	default	damke_ (~damke@unaffiliated/damke) has joined #python
+2017-12-03 17:31:26	default	ravndal (~weechat@unaffiliated/ravndal) has joined #python
+2017-12-03 17:32:03	default	rorro (~rorro@h-170-152-58.A163.priv.bahnhof.se) has joined #python
+2017-12-03 17:32:29	default	cstratak_ (~cstratak@2a00:1028:83a6:3102:41a7:a0c3:4f4:9c21) has joined #python
+2017-12-03 17:32:35	<--	cstratak (~cstratak@2a00:1028:83a6:3102:41a7:a0c3:4f4:9c21) has quit (Read error: Connection reset by peer)
+2017-12-03 17:32:46	<--	malinoff (~malinoff@unaffiliated/malinoff) has quit (Remote host closed the connection)
+2017-12-03 17:33:01	<--	damke (~damke@unaffiliated/damke) has quit (Ping timeout: 240 seconds)
+2017-12-03 17:33:17	default	shantytown (~user@2604:2000:f914:e600:f530:7b93:272b:388b) has joined #python
+2017-12-03 17:33:21	default	Otis (~coffee@unaffiliated/ridout) has joined #python
+2017-12-03 17:33:22	default	malinoff (~malinoff@unaffiliated/malinoff) has joined #python
+2017-12-03 17:33:38	<--	WindChimes (~WindChime@unaffiliated/windchimes) has quit (Ping timeout: 255 seconds)
+2017-12-03 17:33:51	default	pachewise (~pachewise@64.78.245.83) has joined #python
+2017-12-03 17:34:18	<--	matt3o12 (~matt3o12@178.189.16.102) has quit (Quit: matt3o12)
+2017-12-03 17:34:23	<--	absynth (~dan2wik@unaffiliated/dan2wik) has quit (Ping timeout: 248 seconds)
+2017-12-03 17:34:52	default	N0Lif3 (~N0Lif3@unaffiliated/n0lif3) has joined #python
+2017-12-03 17:34:59	<--	portwolf (~portwolf@unaffiliated/portwolf) has quit (Ping timeout: 255 seconds)
+2017-12-03 17:35:21	default	vuoto (~vuoto@80.71.142.118) has joined #python
+2017-12-03 17:35:52	default	jaziz (~jaziz@unaffiliated/jaziz) has joined #python
+2017-12-03 17:36:18	default	Luke (~Luke@unaffiliated/luke) has joined #python
+2017-12-03 17:36:38	<--	royal_screwup21 (89de72f6@gateway/web/cgi-irc/kiwiirc.com/ip.137.222.114.246) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2017-12-03 17:37:37	<--	chargen (~chargen@240.148.21.95.dynamic.jazztel.es) has quit (Quit: BBL)
+2017-12-03 17:37:41	<--	malinoff (~malinoff@unaffiliated/malinoff) has quit (Ping timeout: 255 seconds)
+2017-12-03 17:38:13	default	the_rat (~the_rat@2a02:8109:8900:418:a0c4:9f98:7672:2e7f) has joined #python
+2017-12-03 17:38:18	default	m92 (~m92@93-86-85-38.dynamic.isp.telekom.rs) has joined #python
+2017-12-03 17:38:24	default	WindChimes (~WindChime@unaffiliated/windchimes) has joined #python
+2017-12-03 17:38:25	default	jxv (~jxv@2605:e000:9060:6500:e05a:c63c:f6b2:8a9b) has joined #python
+2017-12-03 17:38:29	<--	maks25 (~maxim@242.076.dsl.syd.iprimus.net.au) has quit (Quit: maks25)
+2017-12-03 17:38:38	default	chargen (~chargen@240.148.21.95.dynamic.jazztel.es) has joined #python
+2017-12-03 17:38:41	<--	xavkno (~Xavkno@dhcp-089-099-034-132.chello.nl) has quit (Quit: My MacBook has gone to sleep. ZZZzzz?)
+2017-12-03 17:38:49	<--	iFlip721 (~iFllip721@pool-74-110-180-3.rcmdva.fios.verizon.net) has quit
+2017-12-03 17:38:57	<--	pachewise (~pachewise@64.78.245.83) has quit (Ping timeout: 260 seconds)
+2017-12-03 17:39:02	<--	cstratak_ (~cstratak@2a00:1028:83a6:3102:41a7:a0c3:4f4:9c21) has quit (Remote host closed the connection)
+2017-12-03 17:39:19	<--	chargen (~chargen@240.148.21.95.dynamic.jazztel.es) has quit (Client Quit)
+2017-12-03 17:39:28	default	cstratak_ (~cstratak@194.228.59.1) has joined #python
+2017-12-03 17:39:30	<--	neiluj (~neiluj@unaffiliated/neiluj) has quit (Quit: WeeChat 1.9.1)
+2017-12-03 17:39:35	default	xavkno (~Xavkno@dhcp-089-099-034-132.chello.nl) has joined #python
+2017-12-03 17:39:42	tech2	stranac: you didn't need the [] in that piece of evil.
+2017-12-03 17:39:58	default	iFlip721 (~iFllip721@pool-74-110-180-3.rcmdva.fios.verizon.net) has joined #python
+2017-12-03 17:41:21	<--	qwerty1793 (~qwerty179@host86-130-90-201.range86-130.btcentralplus.com) has quit (Ping timeout: 248 seconds)
+2017-12-03 17:41:26	default	regebro (~regebro@azw215.neoplus.adsl.tpnet.pl) has joined #python
+2017-12-03 17:42:21	default	xliiv (~xliiv@d218-180.icpnet.pl) has joined #python
+2017-12-03 17:42:30	default	BigJono (~BigJono@61-69-96-158.mel.static-ipl.aapt.com.au) has joined #python
+2017-12-03 17:42:54	<--	the_rat (~the_rat@2a02:8109:8900:418:a0c4:9f98:7672:2e7f) has quit (Ping timeout: 260 seconds)
+2017-12-03 17:43:14	default	damke__ (~damke@unaffiliated/damke) has joined #python
+2017-12-03 17:43:46	default	DrBlackskull (~DrBlacksk@starfish.nyi.net) has joined #python
+2017-12-03 17:43:59	<--	traptrip (~trip@brigaid.xs4all.nl) has quit (Ping timeout: 248 seconds)
+2017-12-03 17:44:01	<--	damke_ (~damke@unaffiliated/damke) has quit (Ping timeout: 240 seconds)
+2017-12-03 17:44:31	default	jncunha (~jncunha@a89-152-160-153.cpe.netcabo.pt) has joined #python
+2017-12-03 17:44:32	<--	jncunha (~jncunha@a89-152-160-153.cpe.netcabo.pt) has quit (Max SendQ exceeded)
+2017-12-03 17:44:47	<--	lregebro (~regebro@aux195.neoplus.adsl.tpnet.pl) has quit (Ping timeout: 260 seconds)
+2017-12-03 17:45:01	default	jncunha (~jncunha@a89-152-160-153.cpe.netcabo.pt) has joined #python
+2017-12-03 17:45:35	<--	jncunha (~jncunha@a89-152-160-153.cpe.netcabo.pt) has quit (Remote host closed the connection)
+2017-12-03 17:46:04	default	rpkilby (~rpkilby@cpe-76-182-45-76.nc.res.rr.com) has joined #python
+2017-12-03 17:46:56	<--	xavkno (~Xavkno@dhcp-089-099-034-132.chello.nl) has quit (Quit: My MacBook has gone to sleep. ZZZzzz?)
+2017-12-03 17:47:11	<--	Gustavo6046 (~Gustavo60@unaffiliated/gustavo6046) has quit (Ping timeout: 248 seconds)
+2017-12-03 17:47:41	default	Chronos_ (~DrBlacksk@pool-165-230-224-8.nat.rutgers.edu) has joined #python
+2017-12-03 17:47:45	default	xavkno (~Xavkno@dhcp-089-099-034-132.chello.nl) has joined #python
+2017-12-03 17:47:46	stranac	tech2, sure, i was mostly reusing the existing code :)
+2017-12-03 17:48:00	tech2	stranac: you could make it more evil too :)
+2017-12-03 17:48:02	<--	BigJono (~BigJono@61-69-96-158.mel.static-ipl.aapt.com.au) has quit (Ping timeout: 255 seconds)
+2017-12-03 17:48:44	stranac	yeah, i just thought i'd leave Angry98 something fun to do
+2017-12-03 17:48:48	default	adminseodwn (~archer@unaffiliated/remcwo9o) has joined #python
+2017-12-03 17:48:50	default	acresearch (~acresearc@unaffiliated/acresearch) has joined #python
+2017-12-03 17:48:53	acresearch	people, is there a way to search for all the DOI of a publishing house? or a journal?
+2017-12-03 17:49:11	acresearch	reason i am asking here is because some people here have experience parsing journals and publoshing houses
+2017-12-03 17:50:21	<--	rpkilby (~rpkilby@cpe-76-182-45-76.nc.res.rr.com) has quit (Ping timeout: 240 seconds)
+2017-12-03 17:51:08	<--	sortaddsort (~archer@unaffiliated/remcwo9o) has quit (Ping timeout: 276 seconds)
+2017-12-03 17:51:09	default	davr0s (~textual@host81-155-65-221.range81-155.btcentralplus.com) has joined #python
+2017-12-03 17:51:11	<--	DrBlackskull (~DrBlacksk@starfish.nyi.net) has quit (Ping timeout: 255 seconds)
+2017-12-03 17:51:37	tech2	acresearch: https://github.com/sckott/habanero
+2017-12-03 17:52:01	<--	Cuby96 (~Cuby96@62.68.12.184) has quit (Ping timeout: 248 seconds)
+2017-12-03 17:52:32	default	tsukuyomi (~none4@unaffiliated/tsukuyomi) has joined #python
+2017-12-03 17:52:35	tech2	acresearch: be aware though that a journal like nature for example has a LOT of DOIs associated with it
+2017-12-03 17:53:10	acresearch	tech2: i am trying to search for all the DOI of OMICS Publishing Group
+2017-12-03 17:53:24	tsukuyomi	Hi everyone, I just installed mps youtube but I'm getting a strange python error before it crashes: https://paste.debian.net/998919/
+2017-12-03 17:53:45	default	isec (~isec@151.55.110.170) has joined #python
+2017-12-03 17:53:47	default	hefe (~hefe@gateway/vpn/privateinternetaccess/hefe) has joined #python
+2017-12-03 17:53:49	isec	hi there
+2017-12-03 17:53:51	<--	converge (~converge@unaffiliated/joaop) has quit (Quit: Leaving...)
+2017-12-03 17:53:56	acresearch	tech2: been at it for DAYS, but cannot get anything useful, they have 800+ journals and 15,000+ issues, each with a different html web-freaking-site !!!!
+2017-12-03 17:54:06	<--	coco (~coco@84-74-76-240.dclient.hispeed.ch) has quit (Ping timeout: 260 seconds)
+2017-12-03 17:54:07	acresearch	tech2: i cannot generalise
+2017-12-03 17:54:18	<--	hefe (~hefe@gateway/vpn/privateinternetaccess/hefe) has quit (Client Quit)
+2017-12-03 17:54:40	default	LogicAside (~ThatOther@unaffiliated/thatotherguy) has joined #python
+2017-12-03 17:55:22	default	smidlers (smyers@redhat/smyers) has joined #python
+2017-12-03 17:55:51	tech2	acresearch: if habanero permits it then you can search for publisher_str='OMICS Publishing Group', not sure though, not something I've tried.
+2017-12-03 17:56:05	acresearch	tech2: let me try
+2017-12-03 17:56:57	<--	ThatOtherGuy (~ThatOther@unaffiliated/thatotherguy) has quit (Ping timeout: 240 seconds)
+2017-12-03 17:57:21	<--	deniska (~denis@unaffiliated/deniska) has quit (Ping timeout: 240 seconds)
+2017-12-03 17:58:04	<--	dtzitz (~dtzitz@unaffiliated/dtzitz) has quit (Quit: Leaving)
+2017-12-03 17:58:31	acresearch	tech2: i don't get how to use it, no printout is happening
+2017-12-03 17:58:50	<--	cstratak_ (~cstratak@194.228.59.1) has quit (Ping timeout: 255 seconds)
+2017-12-03 17:59:35	<--	Cabanossi (~Cabanossi@p5B10ED2E.dip0.t-ipconnect.de) has quit (Ping timeout: 276 seconds)
+2017-12-03 17:59:57	<--	Angry98 (~Angry98@unaffiliated/sexiestcookie) has quit (Ping timeout: 260 seconds)
+2017-12-03 17:59:57	<--	brainpro1 (~michael@pdpc/supporter/gold/brainproxy) has quit (Ping timeout: 240 seconds)
+2017-12-03 18:00:31	default	Cabanossi (~Cabanossi@p5B10ED2E.dip0.t-ipconnect.de) has joined #python
+2017-12-03 18:00:32	<--	kerananw (~kerananw@unaffiliated/kerananw) has quit (Quit: ZZZzzzz...)
+2017-12-03 18:00:46	<--	kuribas (~user@ptr-25vy0i8vgdvhc3j2s63.18120a2.ip6.access.telenet.be) has quit (Quit: ERC (IRC client for Emacs 24.5.1))
+2017-12-03 18:01:16	default	ludwip (2e97dd0d@gateway/web/freenode/ip.46.151.221.13) has joined #python
+2017-12-03 18:01:32	default	bcmyers (~bcmyers@2605:a601:926:100:110:b11e:9b6a:aec4) has joined #python
+2017-12-03 18:01:52	default	al2o3-cr (~al2o3-cr@unaffiliated/gr33n7007h) has joined #python
+2017-12-03 18:01:54	default	chocoelho (~Thunderbi@191.187.132.7) has joined #python
+2017-12-03 18:02:16	<--	zwliew (uid161395@gateway/web/irccloud.com/x-mksidximwlxdepaa) has quit (Quit: Connection closed for inactivity)
+2017-12-03 18:02:42	tsukuyomi	how can I upgrade my python version on debian?
+2017-12-03 18:03:04	tech2	acresearch: still looking...
+2017-12-03 18:03:10	<--	tuxiano (~tuxiano@2a02:8070:898a:3500:6a05:caff:fe55:714d) has quit (Remote host closed the connection)
+2017-12-03 18:03:13	default	rack (~Android@117.136.70.224) has joined #python
+2017-12-03 18:03:17	acresearch	tech2: thank you, i am too
+2017-12-03 18:03:23	default	dieggsy (~user@unaffiliated/diegs/x-9438211) has joined #python
+2017-12-03 18:03:51	<--	davr0s (~textual@host81-155-65-221.range81-155.btcentralplus.com) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz?)
+2017-12-03 18:04:02	<--	s2s2s (~s@host109-147-194-74.range109-147.btcentralplus.com) has quit (Ping timeout: 255 seconds)
+2017-12-03 18:04:03	default	marr (~ccc@77-253-106-169.adsl.inetia.pl) has joined #python
+2017-12-03 18:04:17	<--	fstd (~fstd@unaffiliated/fisted) has quit (Remote host closed the connection)
+2017-12-03 18:05:02	ludwip	I have trouble appending values from rows in the list: "MyList" , Here is code: https://paste.pound-python.org/show/GqhAVCNvZW8b80Mz7HeN/
+2017-12-03 18:05:38	<--	rack (~Android@117.136.70.224) has quit (Read error: Connection reset by peer)
+2017-12-03 18:06:22	default	tuxiano (~tuxiano@2a02:8070:898a:3500:6a05:caff:fe55:714d) has joined #python
+2017-12-03 18:06:44	<--	Rikem (~Rikem@84-45-175-225.static.enta.net) has quit (Ping timeout: 276 seconds)
+2017-12-03 18:06:45	default	deniska (~denis@unaffiliated/deniska) has joined #python
+2017-12-03 18:06:58	default	kexmex (~kexmex@unaffiliated/kexmex) has joined #python
+2017-12-03 18:07:08	<--	bmurt (~hmm@pool-68-131-65-53.nrflva.fios.verizon.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz?)
+2017-12-03 18:07:23	default	Rikem (~Rikem@78-32-233-9.static.enta.net) has joined #python
+2017-12-03 18:07:34	<--	eruditass (uid248673@gateway/web/irccloud.com/x-ugrpkykwyfcdjxnl) has quit (Quit: Connection closed for inactivity)
+2017-12-03 18:07:48	default	coco (~coco@84-74-76-240.dclient.hispeed.ch) has joined #python
+2017-12-03 18:07:49	default	LeedsHK (~Leeds@2404:c804:1495:200:a62:66ff:fe30:17b6) has joined #python
+2017-12-03 18:08:01	default	pachewise (~pachewise@64.78.245.83) has joined #python
+2017-12-03 18:08:43	<--	wesclemens (~wesclemen@c-71-201-40-243.hsd1.il.comcast.net) has quit (Quit: wesclemens)
+2017-12-03 18:08:53	default	Paul1337 (~Paul1337@137.97.8.151) has joined #python
+2017-12-03 18:09:02	Paul1337	why this del not working print(list(map(lambda y:y.__del__('user_id'),your_data)))
+2017-12-03 18:09:10	Paul1337	its saying AttributeError: 'dict' object has no attribute '__del__'
+2017-12-03 18:09:29	coneill	ludwip: You are appending to the same last that you are trying to iterate on and it is infinitely appending
+2017-12-03 18:09:47	coneill	same list*
+2017-12-03 18:09:49	<--	Leeds (~Leeds@n112118145179.netvigator.com) has quit (Ping timeout: 268 seconds)
+2017-12-03 18:10:17	tech2	acresearch: http://api.crossref.org/members?query=omics gives an id of 2674 so curl 'http://api.crossref.org/members/2674/works?sample=10&select=DOI,title' gives a sample of their publications. You should be able to use the cursor API to get all of them (about 65000 I think?)
+2017-12-03 18:10:26	ludwip	thanks conneill: so what should I change?
+2017-12-03 18:10:44	--	LeedsHK is now known as Leeds
+2017-12-03 18:10:48	acresearch	tech2: wow   wait  let me try
+2017-12-03 18:11:10	default	s2s2s (~s@host86-176-207-43.range86-176.btcentralplus.com) has joined #python
+2017-12-03 18:11:30	coneill	ludwip: Depends what you are trying to accomplish. Do you have a second list that you should iterating over and appending to MyList? I'm just not sure what you're trying to achieve with your program.
+2017-12-03 18:11:38	default	vimart (~vimart@cpc101124-sgyl37-2-0-cust126.18-2.cable.virginm.net) has joined #python
+2017-12-03 18:12:08	tech2	acresearch: ah, 81886 results, still, within an order of magnitude of my guess
+2017-12-03 18:12:32	<--	pachewise (~pachewise@64.78.245.83) has quit (Ping timeout: 240 seconds)
+2017-12-03 18:12:32	acresearch	tech2: that sounds more like it, i parsed 1000+ of issues
+2017-12-03 18:12:36	Paul1337	anyone ?
+2017-12-03 18:12:37	default	wesclemens (~wesclemen@c-71-201-40-243.hsd1.il.comcast.net) has joined #python
+2017-12-03 18:12:52	acresearch	anyway let me get this straight, which link has a list of all their DOIs?
+2017-12-03 18:13:18	acresearch	tech2: i have been staring at a creen for 72 hours now i am burned and i have a deadline   sorry for being slow
+2017-12-03 18:14:16	acresearch	tech2: did you get these links from a python3 script or does crossref provide them?
+2017-12-03 18:14:20	<--	wesclemens (~wesclemen@c-71-201-40-243.hsd1.il.comcast.net) has quit (Client Quit)
+2017-12-03 18:14:26	default	kakashi_ (uid266791@nltk/kakashi) has joined #python
+2017-12-03 18:14:27	<--	dieggsy (~user@unaffiliated/diegs/x-9438211) has quit (Remote host closed the connection)
+2017-12-03 18:15:21	default	prophile (~alynn@oftn/oswg-member/prophile) has joined #python
+2017-12-03 18:15:28	default	bmurt (~hmm@pool-68-131-65-53.nrflva.fios.verizon.net) has joined #python
+2017-12-03 18:15:34	default	wesclemens (~wesclemen@c-71-201-40-243.hsd1.il.comcast.net) has joined #python
+2017-12-03 18:16:34	ludwip	conneill: I use following function: https://bpaste.net/show/a880fb82a7d8 to get this this output: https://bpaste.net/show/64d65ca25e37 I need each line to be added to MyList list
+2017-12-03 18:16:38	tech2	acresearch: http://api.crossref.org/members/2674/works?select=DOI,title&rows=1000 will give you 1000 results at a time, you'll have to use offset to get to the following pages, or use a cursor (but I haven't worked out how to use those yet).
+2017-12-03 18:17:04	coneill	ludwip sorry I read your program wrong. I think your error you are getting is because you are assigning MyList the result of MyList.append(sub).  .append will update your list. no need to reassign it
+2017-12-03 18:17:07	<--	wesclemens (~wesclemen@c-71-201-40-243.hsd1.il.comcast.net) has quit (Client Quit)
+2017-12-03 18:17:07	acresearch	tech2: how are you doing this?
+2017-12-03 18:17:17	acresearch	tech2: tech me
+2017-12-03 18:17:20	acresearch	tech2: teach me
+2017-12-03 18:17:29	tech2	acresearch: By reading, and using curl, that's all it takes.
+2017-12-03 18:17:33	tech2	acresearch: https://github.com/CrossRef/rest-api-doc#deep-paging-with-cursors
+2017-12-03 18:17:48	tech2	acresearch: My one talent is being quite good at finding things.
+2017-12-03 18:17:52	ludwip	conneill: thanks, let me try then
+2017-12-03 18:17:54	acresearch	tech2: oh, that is not the habanero module
+2017-12-03 18:17:58	coneill	ludwip: but you still have the issue of getting into an infinite loop right now
+2017-12-03 18:18:00	default	wesclemens (~wesclemen@c-71-201-40-243.hsd1.il.comcast.net) has joined #python
+2017-12-03 18:18:26	default	Gustavo6046 (~Gustavo60@unaffiliated/gustavo6046) has joined #python
+2017-12-03 18:18:42	<--	Gustavo6046 (~Gustavo60@unaffiliated/gustavo6046) has quit (Read error: Connection reset by peer)
+2017-12-03 18:18:45	default	davr0s (~textual@host81-155-65-221.range81-155.btcentralplus.com) has joined #python
+2017-12-03 18:18:46	acresearch	tech2: show me your code
+2017-12-03 18:19:12	default	Gustavo6046 (~Gustavo60@unaffiliated/gustavo6046) has joined #python
+2017-12-03 18:19:19	ludwip	conneill: so what do you sugest?
+2017-12-03 18:19:27	sash_	acresearch: There is no code involved, I guess.
+2017-12-03 18:19:33	sash_	curl is a command line tool
+2017-12-03 18:19:39	tech2	acresearch: I'm not using code, working on something simple though.
+2017-12-03 18:19:44	<--	Gustavo6046 (~Gustavo60@unaffiliated/gustavo6046) has quit (Max SendQ exceeded)
+2017-12-03 18:19:54	tech2	acresearch: otherwise using the cursor will be... challenging
+2017-12-27 18:02:24	default	the_fine_man (~the_fine_@95.76.56.90) has joined #python
+2017-12-27 18:02:24	--	Topic for #python is "Don't paste, use https://paste.pound-python.org/ | http://bit.ly/psf-coc | Tutorial: http://bit.ly/MCAhYx | New programmer? http://bit.ly/23X7emF | Find your local User Group: http://goo.gl/S1Zsq | #python-fr #python.de #python-es #python.tw #python-br #python-nl #python-ir #python.it #python-ro #python-india #python-hu #python-dk"
+2017-12-27 18:02:24	--	Topic set by papna on Mon, 30 Oct 2017 20:33:31
+2017-12-27 18:02:24	--	Channel #python: 1850 nicks (0 ops, 0 voices, 1850 normals)

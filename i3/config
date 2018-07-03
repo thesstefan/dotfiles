@@ -2,6 +2,10 @@
 
 # Keybindings
 
+#bar {
+#    status_command i3blocks -c ~/.config/i3/i3blocks.conf
+#}
+
 set $mod Mod4
 
 # Start A Terminal
@@ -61,15 +65,15 @@ bindsym $mod+a focus parent
 # bindsym $mod+d focus child
 
 # Initialize Workspace
-set $w1 1:surf
-set $w2 2:code
-set $w3 3:term
+set $w1 1:browser
+set $w2 2:terminal
+set $w3 3:terminal
 set $w4 4:misc
 set $w5 5:misc
 set $w6 6:misc
 set $w7 7:misc
-set $w8 8:misc
-set $w9 9:chat
+set $w8 8:telegram
+set $w9 9:pidgin
 set $w10 10:music
 
 # Switch To Workspace
@@ -131,6 +135,7 @@ mode "resize" {
 
 # i3-gaps Settings
 
+
 # Global Gaps Size
 gaps inner 5
 gaps outer 5
@@ -176,15 +181,19 @@ mode "$mode_gaps_outer" {
 
 bindsym $mod+r mode "resize"
 
-
-
 # Volume Control
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5%
 
 # Brightness Control
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20
+
+# Media Control
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioStop exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 
 # Custom Colors
 set_from_resource $darkred color1 #000000
@@ -215,26 +224,29 @@ client.urgent           $black          $black          $darkwhite      $darkbla
 # Apps Settings
 
 # Start Apps 
-exec --no-startup-id nitrogen --set-scaled /home/stefan/Wallpapers/mount.jpg
-# exec --no-startup-id chromium 
-# exec --no-startup-id pidgin
-exec --no-startup-id firefox
-exec --no-startup-id spotify
+exec --no-startup-id nitrogen --set-scaled /home/stefan/wallpaper/wall.jpg
+exec --no-startup-id chromium 
+exec --no-startup-id pidgin
+exec --no-startup-id cantata
+exec --no-startup-id telegram
+# exec --no-startup-id spotify
 
 exec --no-startup-id polybar bar --config=/home/stefan/.config/polybar/config
 
 # Border
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 0
 for_window [class="(?i)urxvt"] border pixel 1
 
-for_window [class="Spotify"] move to workspace $w10
+for_window [class="cantata"] move to workspace $w10
+#for_window [class="Spotify"] move to workspace $w10
 
-exec --no-startup-id urxvt -name weechat -e weechat
+# exec --no-startup-id urxvt -name weechat -e weechat
 bindsym $mod+d exec --no-startup-id rofi -show run
 
 assign [instance="weechat"] $w9
-assign [class="Qutebrowser"] $w1
+#assign [class="qutebrowser"] $w1
 assign [class="Chromium"] $w1
 assign [class="Firefox"] $w1
 assign [class="Pidgin"] $w9
+assign [class="Telegram"] $w8
 assign [class="urxvt -e ncmpcpp"] $w10

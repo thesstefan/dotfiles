@@ -17,11 +17,11 @@ URxvt.saveLines:        15000
 
 URxvt.font.letterSpace: -1
 
-!URxvt.font:xft:xos4 Terminess Powerline:size=12:style=Regular:antialias=true
-!URxvt.boldFont:xft:xos4 Terminess Powerline:antialias=true
+URxvt.font:xft:xos4 Terminess Powerline:size=9:antialias=true
+URxvt.boldFont:xft:xos4 Terminess Powerline:antialias=true
 
-URxvt.font:xft:Misc Termsyn:size=8, xft:Inconsolata\ for\ Powerline:size=12
-URxvt.boldFont:xft:Misc Termsyn:size=8:antialias=true
+!URxvt.font:xft:Inconsolata for Powerline:size=11:style=Medium
+!URxvt.boldFont:xft:Misc Termsyn:size=9:antialias=true
 
 URxvt.urgentOnBell:     true
 

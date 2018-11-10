@@ -5,7 +5,7 @@ URxvt.keysym.M-u: perl:     url-select:select_next
 URxvt.url-select.autocopy:  true
 URxvt.url-select.button:    2
 URxvt.url-select.underline: true
-URxvt.url-launcher:         /usr/bin/firefox
+URxvt.url-launcher:         /usr/bin/chromium
 URxvt.matcher.button:       1
 
 !! CopyPaste Keys
@@ -26,3 +26,16 @@ URxvt.boldFont:xft:xos4 Terminess Powerline:antialias=true
 URxvt.urgentOnBell:     true
 
 #include "/home/stefan/.config/colors/gruvbox"
+
+rofi.lines: 10
+rofi.eh: 2
+rofi.padding: 200
+rofi.fullscreen: true
+rofi.bw: 0
+rofi.separator-style: none
+rofi.hide-scrollbar: true
+
+rofi.color-window: argb:ef080808, #ffffff, #000000
+rofi.color-normal: argb:00080808, #ffffff, argb:00080808, argb:609400d3, #ffffff
+rofi.color-active: argb:e0080808, #ffffff, argb:e0080808, argb:60ff8c00, #ffffff
+rofi.color-urgent: argb:e0080808, #ffffff, argb:e0080808, argb:60006400, #ffffff

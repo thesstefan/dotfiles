@@ -20,9 +20,6 @@ URxvt.font.letterSpace: -1
 URxvt.font:xft:xos4 Terminess Powerline:size=9:antialias=true
 URxvt.boldFont:xft:xos4 Terminess Powerline:antialias=true
 
-!URxvt.font:xft:Inconsolata for Powerline:size=11:style=Medium
-!URxvt.boldFont:xft:Misc Termsyn:size=9:antialias=true
-
 URxvt.urgentOnBell:     true
 
 #include "/home/stefan/.config/colors/gruvbox"

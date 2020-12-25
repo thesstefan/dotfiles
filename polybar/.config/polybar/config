@@ -1,0 +1,217 @@
+[colors]
+FOREGROUND = #EBDBB2
+UNFOCUSED_FOREGROUND = #2D2D2D
+GREEN = #84BD00
+RED = #FF0000
+
+BACKGROUND = ${xrdb:background}
+
+[bar/hidden]
+width = 100%
+height = 25
+
+offset-x = 0%
+radius = 0.0
+
+fixed-center = true
+
+background = ${colors.BACKGROUND}
+
+line-size = 0
+border-color = #F00
+
+border-size = 0
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 0
+module-margin-right = 0
+
+font-0 = Misc Termsyn:size11;1
+font-1 = FontAwesome:fontformat=truetype:size=10;1
+
+modules-center = memory
+modules-left = wireless
+modules-right = temperature 
+
+[bar/bar]
+width = 100%
+height = 25
+
+offset-x = 0%
+radius = 0.0
+
+fixed-center = true
+
+background = ${colors.BACKGROUND}
+
+line-size = 0
+border-color = #F00
+
+border-size = 0
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 0
+module-margin-right = 0
+
+font-0 = Misc Termsyn:size11;1
+font-1 = FontAwesome:fontformat=truetype:size=10;1
+
+modules-left = i3 
+modules-center = music
+modules-right = cpu memory temperature date pulseaudio battery
+
+[module/i3]
+type = internal/i3
+format = <label-state><label-mode>
+
+index-sort = true
+
+enable-click = true
+enable-scroll = false
+
+strip-wsnumbers = true
+
+label-focused = " %name%"
+label-focused-foreground = ${colors.FOREGROUND}
+label-focused-background = ${colors.BACKGROUND}
+
+label-unfocused = " %name%"
+label-unfocused-foreground = ${colors.UNFOCUSED_FOREGROUND}
+label-unfocused-background = ${colors.BACKGROUND}
+
+label-alert = " %name%"
+label-alert-foreground = ${colors.GREEN}
+label-alert-background = ${colors.BACKGROUND}
+
+[module/music]
+type = custom/script
+exec = sh ~/.config/polybar/music.sh
+interval = 2
+
+format = <label>
+format-foreground = ${colors.GREEN}
+label =  %output%
+
+[module/date]
+type = internal/date
+interval = 1
+
+date = 
+date-alt = "%A - %d/%m/%Y"
+
+time = "%H:%M "
+time-alt = 
+
+format = <label>
+format-foreground = ${colors.FOREGROUND}
+label = %date% %time%
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+use-ui-max = false
+
+click-middle = pavucontrol &
+
+interval = 5
+
+format-muted-background = ${colors.BACKGROUND}
+format-volume-background = ${colors.BACKGROUND}
+format-volume = "  <label-volume> <ramp-volume>  "
+
+format-muted = <label-muted>
+label-muted = "  0%   "
+
+label-volume = "  %percentage%%"
+
+format-muted-foreground = ${colors.RED}
+
+label-volume-foreground = ${colors.FOREGROUND}
+ramp-volume-foreground = ${colors.FOREGROUND}
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+
+[module/battery]
+type = internal/battery
+battery = BAT1
+adapter = AC
+full-at = 100
+
+label-charging = " %percentage%% "
+label-discharging = " %percentage%%"
+label-full = " %percentage%%"
+
+format-full-background = ${colors.BACKGROUND}
+format-charging-background = ${colors.BACKGROUND}
+format-charging = "<label-charging> <animation-charging> "
+
+format-discharging-background = ${colors.BACKGROUND}
+format-discharging = "<label-discharging> <ramp-capacity> "
+format-discharging-foreground = ${colors.FOREGROUND}
+
+format-full = 
+format-full-prefix-foreground = ${colors.FOREGROUND}
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+ramp-capacity-foreground = ${colors.FOREGROUND}
+
+label-charging-foreground = ${colors.GREEN}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-foreground = ${colors.GREEN}
+animation-charging-framerate = 750
+
+[module/temperature]
+type = internal/temperature
+
+hwmon-path = /sys/class/hwmon/hwmon3/temp1_input
+base-temperature = 30
+warn-temperature = 105
+
+units = true
+
+label = "%temperature-c%   " 
+label-foreground = ${colors.RED}
+
+[module/wireless]
+type = internal/network
+
+interface = wlp1s0
+
+interval = 3.0
+
+label-connected = "   %essid% "
+label-connected-foreground = ${colors.GREEN}
+
+label-disconnected = " Not Connected" 
+label-disconnected-foreground = ${colors.RED}
+
+[module/memory]
+type = internal/memory
+
+interval = 3
+
+label = "%percentage_used%%   " 
+label-foreground = ${colors.FOREGROUND}
+
+[module/cpu]
+type = internal/cpu
+
+interval = 2
+label = "%percentage-cores%   "
+label-foreground = #FF0000

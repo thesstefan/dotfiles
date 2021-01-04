@@ -3,37 +3,9 @@ FOREGROUND = #EBDBB2
 UNFOCUSED_FOREGROUND = #2D2D2D
 GREEN = #84BD00
 RED = #FF0000
+YELLOW = ${xrdb:color3}
 
 BACKGROUND = ${xrdb:background}
-
-[bar/hidden]
-width = 100%
-height = 25
-
-offset-x = 0%
-radius = 0.0
-
-fixed-center = true
-
-background = ${colors.BACKGROUND}
-
-line-size = 0
-border-color = #F00
-
-border-size = 0
-
-padding-left = 0
-padding-right = 0
-
-module-margin-left = 0
-module-margin-right = 0
-
-font-0 = Misc Termsyn:size11;1
-font-1 = FontAwesome:fontformat=truetype:size=10;1
-
-modules-center = memory
-modules-left = wireless
-modules-right = temperature 
 
 [bar/bar]
 width = 100%
@@ -60,9 +32,11 @@ module-margin-right = 0
 font-0 = Misc Termsyn:size11;1
 font-1 = FontAwesome:fontformat=truetype:size=10;1
 
+enable-ipc = true
+
 modules-left = i3 
 modules-center = music
-modules-right = cpu memory temperature date pulseaudio battery
+modules-right = dunst cpu memory temperature date pulseaudio battery
 
 [module/i3]
 type = internal/i3
@@ -179,7 +153,7 @@ animation-charging-framerate = 750
 [module/temperature]
 type = internal/temperature
 
-hwmon-path = /sys/class/hwmon/hwmon3/temp1_input
+hwmon-path = /sys/class/hwmon/hwmon4/temp1_input
 base-temperature = 30
 warn-temperature = 105
 
@@ -215,3 +189,11 @@ type = internal/cpu
 interval = 2
 label = "%percentage-cores%   "
 label-foreground = #FF0000
+
+[module/dunst]
+type = custom/ipc
+initial = 1
+format-foreground = ${colors.YELLOW}
+
+hook-0 = echo "%{A1:notify-send "DUNST_COMMAND_PAUSE" && polybar-msg hook dunst 2:}%{A} " &
+hook-1 = echo "%{A1:notify-send "DUNST_COMMAND_RESUME" && polybar-msg hook dunst 1:}%{A} " &

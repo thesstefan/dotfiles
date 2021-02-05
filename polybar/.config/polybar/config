@@ -34,7 +34,7 @@ font-1 = FontAwesome:fontformat=truetype:size=10;1
 
 enable-ipc = true
 
-modules-left = i3 
+modules-left = i3 wireless 
 modules-center = music
 modules-right = dunst cpu memory temperature date pulseaudio battery
 

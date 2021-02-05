@@ -2,10 +2,6 @@
 
 # Keybindings
 
-#bar {
-#    status_command i3blocks -c ~/.config/i3/i3blocks.conf
-#}
-
 set $mod Mod4
 
 # Start A Terminal
@@ -73,7 +69,7 @@ set $w5 5:misc
 set $w6 6:misc
 set $w7 7:misc
 set $w8 8:telegram
-set $w9 9:pidgin
+set $w9 9:messenger
 set $w10 10:music
 
 # Switch To Workspace
@@ -133,6 +129,48 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 
+set $mode_gaps Gaps:(o) outer, (i) inner
+set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift ++|-|0 (global)
+set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift ++|-|0 (global)
+
+bindsym $mod+Shift+g mode "$mode_gaps"
+
+mode "$mode_gaps" {
+    bindsym o mode "$mode_gaps_outer"
+    bindsym i mode "$mode_gaps_inner"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_inner" {
+    bindsym plus gaps inner current plus 5
+    bindsym minus gaps inner current minus 5
+    bindsym 0 gaps inner current set 0
+
+    bindsym Shift+plus gaps inner all plus 5
+    bindsym Shift+minus gaps inner all minus 5
+    bindsym Shift+0 gaps inner all set 0
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_outer" {
+    bindsym plus gaps outer current plus 5
+    bindsym minus gaps outer current minus 5
+    bindsym 0 gaps outer current set 0
+
+    bindsym Shift+plus gaps outer all plus 5
+    bindsym Shift+minus gaps outer all minus 5
+    bindsym Shift+0 gaps outer all set 0
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+gaps inner 5
+gaps outer 3
+
 # Mute sound
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 3 toggle && pactl set-sink-mute 0 toggle
 
@@ -178,28 +216,27 @@ client.focused_inactive $black          $black          $darkwhite      $darkbla
 client.unfocused        $black          $black          $darkwhite      $darkblack $darkblack
 client.urgent           $black          $black          $darkwhite      $darkblack $darkblack
 
-# Apps Settings
+# Special Binds
+bindsym $mod+Shift+s exec --no-startup-id flameshot gui
+bindsym $mod+d exec --no-startup-id rofi -show run
 
-# Start Apps 
-#exec --no-startup-id nitrogen --set-scaled /home/stefan/wallpaper/wall.jpg
+# Start Programs
+exec --no-startup-id picom -b -i 1.0
+exec --no-startup-id nitrogen --set-scaled /home/stefan/.wall/wallpaper.jpg
 exec --no-startup-id firefox
 exec --no-startup-id telegram-desktop 
 exec --no-startup-id spotify
-
 exec --no-startup-id polybar bar --config=/home/stefan/.config/polybar/config
 exec xrdb ~/.Xresources
 
 # Border
 for_window [class="^.*"] border pixel 0
 for_window [class="(?i)urxvt"] border pixel 1
-
 for_window [class="Spotify"] move to workspace $w10
-
-# exec --no-startup-id urxvt -name weechat -e weechat
-bindsym $mod+d exec --no-startup-id rofi -show run
 
 assign [instance="weechat"] $w9
 assign [class="qutebrowser"] $w1
+assign [class="TelegramDesktop"] $w8
 assign [class="Chromium"] $w1
 assign [class="Firefox"] $w1
 assign [class="Pidgin"] $w9

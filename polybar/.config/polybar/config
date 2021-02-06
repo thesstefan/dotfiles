@@ -167,12 +167,12 @@ type = internal/network
 
 interface = wlp1s0
 
-interval = 3.0
+interval = 1.0
 
-label-connected = "   %essid% "
+label-connected = %{A1:netw:}  %essid% %{A}
 label-connected-foreground = ${colors.GREEN}
 
-label-disconnected = " Not Connected" 
+label-disconnected = %{A1:netw:}  Not Connected %{A} 
 label-disconnected-foreground = ${colors.RED}
 
 [module/memory]

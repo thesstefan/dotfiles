@@ -234,6 +234,8 @@ for_window [class="^.*"] border pixel 0
 for_window [class="(?i)urxvt"] border pixel 1
 for_window [class="Spotify"] move to workspace $w10
 
+for_window [class="^Termite$"] floating enable
+
 assign [instance="weechat"] $w9
 assign [class="qutebrowser"] $w1
 assign [class="TelegramDesktop"] $w8

@@ -1,0 +1,14 @@
+00:00:00.065 [ERROR] [sway/config/output.c:1080] failed to execute 'swaybg' (background configuration probably not applied): No such file or directory
+Failed to acquire service name: File exists
+Is a notification daemon already running?
+[2025-03-25 15:26:41.919] [info] Using configuration file /home/stefan/.config/waybar/config.jsonc
+[2025-03-25 15:26:41.956] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.portal.Error.NotFound: Requested setting not found
+[2025-03-25 15:26:41.956] [info] Using CSS file /home/stefan/.config/waybar/style.css
+basic_string::_M_create
+[2025-03-25 15:26:41.961] [warning] module cava: Unknown module: cava
+[2025-03-25 15:26:41.983] [warning] Requested height: 24 is less than the minimum height: 34 required by the modules
+[2025-03-25 15:26:41.983] [info] Bar configured (width: 1276, height: 34) for output: WL-1
+
+(waybar:18762): Gtk-CRITICAL **: 15:26:41.988: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:18762): Gtk-CRITICAL **: 15:26:41.988: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed

@@ -1,0 +1,25 @@
+daemonize
+indicator-idle-visible
+color=000000
+font=CaskaydiaMono Nerd Font Mono
+indicator-radius=200
+indicator-thickness=20
+line-color=000000
+ring-color=101010
+inside-color=000000
+key-hl-color=ebdbb2
+separator-color=202020
+text-color=ebdbb2
+text-caps-lock-color=ebdbb2
+line-ver-color=000000
+ring-ver-color=000000
+inside-ver-color=000000
+text-ver-color=ebdbb2
+text-wrong-color=AA0000
+ring-wrong-color=000000
+inside-wrong-color=000000
+line-wrong-color=000000
+text-clear-color=ebdbb2
+inside-clear-color=000000
+ring-clear-color=000000
+line-clear-color=000000

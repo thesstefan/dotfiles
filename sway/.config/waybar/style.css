@@ -1,0 +1,130 @@
+* {
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+window#waybar {
+  font-family:
+    FontAwesome,
+    Terminess Nerd Font;
+  background-color: #000000;
+  border-bottom: 0px;
+  color: #ebdbb2;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.modules-right {
+  margin: 10px 10px 0 0;
+}
+.modules-center {
+  margin: 10px 0 0 0;
+}
+.modules-left {
+  margin: 10px 0 0 10px;
+}
+
+#workspaces {
+  background-color: #000000;
+}
+
+#workspaces button {
+  padding: 0 10px;
+  background-color: #000000;
+  color: #ebdbb2;
+}
+
+#workspaces button:hover {
+  color: #d79921;
+}
+
+#workspaces button.focused {
+  background-color: #303030;
+}
+
+#workspaces button.urgent {
+  background-color: #803030;
+}
+
+#idle_inhibitor,
+#cava,
+#scratchpad,
+#mode,
+#window,
+#clock,
+#battery,
+#backlight,
+#wireplumber,
+#tray,
+#mpris,
+#network,
+#power-profiles-daemon,
+#load,
+#bluetooth,
+#custom-updates {
+  padding: 0px 10px;
+  color: #ebdbb2;
+}
+
+#mode {
+  background-color: #303030;
+  color: #ebdbb2;
+  /* box-shadow: inset 0 -3px #ffffff; */
+}
+
+#cava {
+  padding: 0 20px;
+}
+
+#battery.charging,
+#battery.plugged {
+  background-color: #98971a;
+  color: #000000;
+}
+
+@keyframes blink {
+  to {
+    background-color: #000000;
+    color: #ebdbb2;
+  }
+}
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+#battery.critical:not(.charging) {
+  background-color: #cc241d;
+  color: #ebdbb2;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+label:focus {
+  background-color: #000000;
+}
+
+#wireplumber.muted {
+  background-color: #000000;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+}
+
+#mpris.playing {
+  background-color: #303030;
+  color: #ebdbb2;
+}
+
+#tray menu {
+  font-family: sans-serif;
+}
+
+#scratchpad.empty {
+  background: transparent;
+}

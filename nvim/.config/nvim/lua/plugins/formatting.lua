@@ -10,7 +10,9 @@ return {
             zsh = { "beautysh" },
             markdown = { "prettierd" },
             json = { "prettierd" },
+            jsonc = { "prettierd" },
             yaml = { "prettierd" },
+            css = { "prettierd" },
         },
         format_on_save = {
             timeout_ms = 500,

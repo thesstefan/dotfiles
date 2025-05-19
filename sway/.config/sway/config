@@ -147,9 +147,9 @@ assign [class="Slack"] 8
 # ProtonMail
 assign [app_id="chrome-jnpecgipniidlgicjocehkhajgdnjekh-Default"] 9
 exec /usr/bin/chromium --profile-directory=Default --app-id=jnpecgipniidlgicjocehkhajgdnjekh
-# ETH Outlook 
-assign [app_id="chrome-faolnafnngnfdaknnbpnkhgohbobgegn-Default"] 9
-exec /usr/bin/chromium --profile-directory=Default --app-id=faolnafnngnfdaknnbpnkhgohbobgegn
+# # ETH Outlook 
+# assign [app_id="chrome-faolnafnngnfdaknnbpnkhgohbobgegn-Default"] 9
+# exec /usr/bin/chromium --profile-directory=Default --app-id=faolnafnngnfdaknnbpnkhgohbobgegn
 # ProtonCalendar
 assign [app_id="chrome-ojibjkjikcpjonjjngfkegflhmffeemk-Default"] 9
 exec /usr/bin/chromium --profile-directory=Default --app-id=ojibjkjikcpjonjjngfkegflhmffeemk

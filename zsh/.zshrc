@@ -7,6 +7,7 @@ fi
 
 [[ -f ~/.zsh/plugins.zsh ]] && source ~/.zsh/plugins.zsh
 [[ -f ~/.zsh/aliases.zsh ]] && source ~/.zsh/aliases.zsh
+[[ -f ~/.zsh/vars.zsh ]] && source ~/.zsh/vars.zsh
 [[ -f ~/.zsh/py_env_management.zsh ]] && source ~/.zsh/py_env_management.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

@@ -1,0 +1,13 @@
+[Unit]
+Description=Rclone Mount for Proton Drive
+After=network-online.target
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/rclone mount proton:/ /home/stefan/proton_drive --allow-other --vfs-cache-mode full --vfs-cache-max-size 20G --log-file .config/rclone/rclone_proton.log --log-level INFO
+ExecStop=/bin/fusermount -uz /home/stefan/proton_drive
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+

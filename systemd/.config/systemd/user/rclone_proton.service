@@ -9,5 +9,5 @@ ExecStop=/bin/fusermount -uz /home/stefan/proton_drive
 Restart=on-failure
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
 

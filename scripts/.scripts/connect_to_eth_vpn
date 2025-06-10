@@ -1,0 +1,69 @@
+#!/bin/bash
+
+# This script connects to the ETH Zurich VPN using OpenConnect.
+#
+VPN_SERVER="sslvpn.ethz.ch"
+ETH_REALM="student-net.ethz.ch"
+VPN_GROUP="student-net"
+USER_AGENT="AnyConnect"
+
+SECRET_TOOL_SERVICE_PASS="openconnect-eth-pass"
+SECRET_TOOL_SERVICE_OTP_SECRET="openconnect-eth-otp-secret"
+
+if [ -z "${ETH_USERNAME}" ]; then
+    echo "Error: The ETH_USERNAME environment variable is not set." >&2
+    echo "Please set it, e.g., export ETH_USERNAME=\"your_eth_username\"" >&2
+    exit 1
+fi
+
+if ! command -v secret-tool &> /dev/null; then
+    echo "Error: secret-tool is not installed. Please install it (e.g., sudo apt install libsecret-tools)." >&2
+    exit 1
+fi
+
+if ! command -v openconnect &> /dev/null; then
+    echo "Error: openconnect is not installed. Please install it (e.g., sudo apt install openconnect)." >&2
+    exit 1
+fi
+
+username_with_realm="${ETH_USERNAME}@${ETH_REALM}"
+
+password=$(secret-tool lookup service "${SECRET_TOOL_SERVICE_PASS}" user "${username_with_realm}")
+if [ -z "${password}" ]; then
+    echo "Error: Failed to retrieve password for '${username_with_realm}' using service '${SECRET_TOOL_SERVICE_PASS}'." >&2
+    echo "You can store it using a command like:" >&2
+    echo "secret-tool store --label='ETH VPN Password (${username_with_realm})' service \"${SECRET_TOOL_SERVICE_PASS}\" user \"${username_with_realm}\"" >&2
+    exit 1
+fi
+
+otp_secret_base32=$(secret-tool lookup service "${SECRET_TOOL_SERVICE_OTP_SECRET}" user "${username_with_realm}")
+if [ -z "${otp_secret_base32}" ]; then
+    echo "Error: Failed to retrieve OTP secret for '${username_with_realm}' using service '${SECRET_TOOL_SERVICE_OTP_SECRET}'." >&2
+    echo "This should be your Base32 encoded TOTP secret key (e.g., JBSWY3DPEHPK3PXP)." >&2
+    echo "You can store it using a command like:" >&2
+    echo "secret-tool store --label='ETH VPN OTP Secret (${username_with_realm})' service \"${SECRET_TOOL_SERVICE_OTP_SECRET}\" user \"${username_with_realm}\"" >&2
+    exit 1
+fi
+
+echo "Attempting to connect to VPN server: ${VPN_SERVER} as ${username_with_realm}..."
+
+TOKEN_SECRET_FORMATTED="sha1:base32:${otp_secret_base32}"
+
+if echo "${password}" | sudo openconnect -b \
+    -u "${username_with_realm}" \
+    -g "${VPN_GROUP}" \
+    --useragent="${USER_AGENT}" \
+    --passwd-on-stdin \
+    --token-mode=totp \
+    --token-secret="${TOKEN_SECRET_FORMATTED}" \
+    "${VPN_SERVER}"; then
+    echo "OpenConnect process started in the background."
+    echo "You can check its status with 'pgrep openconnect' or system logs."
+    echo "To disconnect, you might need to find and kill the openconnect process (e.g., 'sudo pkill openconnect')."
+else
+    echo "Error: OpenConnect command failed. Check the output above for details." >&2
+    exit 1
+fi
+
+exit 0
+

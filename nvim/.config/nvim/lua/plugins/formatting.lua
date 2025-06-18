@@ -13,6 +13,9 @@ return {
             jsonc = { "prettierd" },
             yaml = { "prettierd" },
             css = { "prettierd" },
+            html = { "prettierd" },
+            javascript = { "prettierd" },
+            typescript = { "prettierd" },
         },
         format_on_save = {
             timeout_ms = 500,

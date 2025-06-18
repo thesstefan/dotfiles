@@ -137,30 +137,33 @@ bindsym $mod+less move workspace to output left
 
 include @sysconfdir@/sway/config.d/*
 
-# Gemini
-assign [app_id="chrome-gdfaincndogidkdcdkhapmbffkckdkhn-Default"] 7
-exec /usr/bin/chromium --profile-directory=Default --app-id=gdfaincndogidkdcdkhapmbffkckdkhn
-
 # WhatsApp Web
-assign [app_id="chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default"] 8
-exec /usr/bin/chromium --profile-directory=Default --app-id=hnpfjngllnobngcgfapefoaidbinmjnm
+assign [app_id="FFPWA-01JXMPPW9T49MEQG9ABBPB85N9"] 8
+exec firefoxpwa --app-id=FFPWA-01JXMPPW9T49MEQG9ABBPB85N9
 # Slack
 assign [class="Slack"] 8
+# Signal
+assign [class="Signal"] 8
+exec signal-desktop
+
+# SilverBullet
+assign [app_id="FFPWA-01JXK66587KNGRJZB88ESE2YZE"] 7
+
+exec firefoxpwa --app-id=FFPWA-01JXK66587KNGRJZB88ESE2YZE
 
 # ProtonMail
-assign [app_id="chrome-jnpecgipniidlgicjocehkhajgdnjekh-Default"] 9
-exec /usr/bin/chromium --profile-directory=Default --app-id=jnpecgipniidlgicjocehkhajgdnjekh
-# # ETH Outlook 
-# assign [app_id="chrome-faolnafnngnfdaknnbpnkhgohbobgegn-Default"] 9
-# exec /usr/bin/chromium --profile-directory=Default --app-id=faolnafnngnfdaknnbpnkhgohbobgegn
+assign [app_id="FFPWA-01JXMPG397VZAX6PEXG0JY8308"] 9
+exec firefoxpwa --app-id=FFPWA-01JXMPG397VZAX6PEXG0JY8308
 # ProtonCalendar
-assign [app_id="chrome-ojibjkjikcpjonjjngfkegflhmffeemk-Default"] 9
-exec /usr/bin/chromium --profile-directory=Default --app-id=ojibjkjikcpjonjjngfkegflhmffeemk
+assign [app_id="FFPWA-01JXMPCRE138CYAAV3VF204PZ6"] 9
+exec firefoxpwa --app-id=FFPWA-01JXMPCRE138CYAAV3VF204PZ6
 
 # YT Music
-assign [app_id="chrome-cinhimbnkkaeohfgghhklpknlkffjgod-Default"] 10
-exec /usr/bin/chromium --profile-directory=Default --app-id=cinhimbnkkaeohfgghhklpknlkffjgod
-
+assign [app_id="FFPWA-01JXHXFAHG1EAFZ2K7PGB6H0PY"] 10
+# exec firefoxpwa --app-id=FFPWA-01JXHXFAHG1EAFZ2K7PGB6H0PY
+# Feishin
+assign [class="feishin"] 10
+exec feishin
 
 gaps inner 10 
 gaps outer 3

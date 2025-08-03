@@ -77,5 +77,9 @@ return {
         lspconfig["jinja_lsp"].setup({
             capabilities = default,
         })
+
+        lspconfig["texlab"].setup({
+            capabilities = default,
+        })
     end,
 }

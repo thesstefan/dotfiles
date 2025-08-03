@@ -16,6 +16,8 @@ return {
             html = { "prettierd" },
             javascript = { "prettierd" },
             typescript = { "prettierd" },
+            bib = { "bibtex-tidy" },
+            tex = { "tex-fmt" },
         },
         format_on_save = {
             timeout_ms = 500,

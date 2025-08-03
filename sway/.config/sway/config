@@ -10,9 +10,6 @@ set $right l
 set $term foot 
 set $menu fuzzel
 
-output DP-2 resolution 3840x2160 position 0,0 scale 1.0
-output eDP-1 resolution 2880x1800 position 3840,360 scale 1.0
-
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 
@@ -138,37 +135,37 @@ bindsym $mod+less move workspace to output left
 include @sysconfdir@/sway/config.d/*
 
 # WhatsApp Web
+exec firefoxpwa site launch 01JXMPPW9T49MEQG9ABBPB85N9
 assign [app_id="FFPWA-01JXMPPW9T49MEQG9ABBPB85N9"] 8
-exec firefoxpwa --app-id=FFPWA-01JXMPPW9T49MEQG9ABBPB85N9
 # Slack
-assign [class="Slack"] 8
+exec slack --ozone-platform-hint=auto
+assign [app_id="Slack"] 8
 # Signal
-assign [class="Signal"] 8
-exec signal-desktop
+exec signal-desktop --ozone-platform-hint=auto
+assign [app_id="signal"] 8
 
 # SilverBullet
+exec firefoxpwa site launch 01JXK66587KNGRJZB88ESE2YZE
 assign [app_id="FFPWA-01JXK66587KNGRJZB88ESE2YZE"] 7
 
-exec firefoxpwa --app-id=FFPWA-01JXK66587KNGRJZB88ESE2YZE
-
 # ProtonMail
+exec firefoxpwa site launch 01JXMPG397VZAX6PEXG0JY8308
 assign [app_id="FFPWA-01JXMPG397VZAX6PEXG0JY8308"] 9
-exec firefoxpwa --app-id=FFPWA-01JXMPG397VZAX6PEXG0JY8308
 # ProtonCalendar
+exec firefoxpwa site launch 01JXMPCRE138CYAAV3VF204PZ6
 assign [app_id="FFPWA-01JXMPCRE138CYAAV3VF204PZ6"] 9
-exec firefoxpwa --app-id=FFPWA-01JXMPCRE138CYAAV3VF204PZ6
 
 # YT Music
 assign [app_id="FFPWA-01JXHXFAHG1EAFZ2K7PGB6H0PY"] 10
-# exec firefoxpwa --app-id=FFPWA-01JXHXFAHG1EAFZ2K7PGB6H0PY
+# exec firefoxpwa site launch FFPWA-01JXHXFAHG1EAFZ2K7PGB6H0PY
 # Feishin
-assign [class="feishin"] 10
-exec feishin
+exec feishin --ozone-platform-hint=auto
+assign [app_id="feishin"] 10
 
 gaps inner 10 
 gaps outer 3
 
-default_border pixel 2
+default_border pixel 1
 smart_borders on
 smart_gaps on
 
@@ -194,6 +191,10 @@ for_window [app_id="bluetuith-popup"] floating enable, sticky enable
 for_window [app_id="bluetuith-popup"] resize set width 1000 px height 400 px
 for_window [app_id="bluetuith-popup"] move position cursor, move down 40 px
 
+for_window [app_id="impala-popup"] floating enable, sticky enable
+for_window [app_id="impala-popup"] resize set width 1000 px height 800 px
+for_window [app_id="impala-popup"] move position cursor, move down 40 px
+
 for_window [app_id="pulsemixer-popup"] floating enable
 for_window [app_id="pulsemixer-popup"] resize set width 1000 px height 400 px
 for_window [app_id="pulsemixer-popup"] move position cursor, move down 40 px
@@ -210,3 +211,4 @@ exec wl-paste -t text --watch clipman store --max-items 1024
 bindsym $mod+y exec clipman pick --tool=CUSTOM --tool-args="fuzzel -d -w "
 
 exec_always kanshi
+exec_always udiskie

@@ -15,8 +15,9 @@
     "backlight",
     "custom/wlsunset",
     "bluetooth",
-    "network#2",
-    "network#1",
+    "network#wifi",
+    "network#caldigit-ts4",
+    "custom/tailscale",
     "power-profiles-daemon",
     "battery",
     "tray",
@@ -132,17 +133,18 @@
     "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
     "on-click": "foot --app-id=pulsemixer-popup -e pulsemixer",
   },
-  "network#2": {
+  "network#wifi": {
     "interface": "wlan0",
     "format": "{ifname}",
     "format-wifi": "{essid}  ",
     "format-disconnected": "", //An empty format will hide the module.
     "tooltip-format-wifi": "   {essid} ({signalStrength}%)",
     "max-length": 50,
+    "on-click": "foot --app-id=impala-popup -e impala",
   },
-  "network#1": {
-    "interface": "enp198s0f3u1u3",
-    "format-ethernet": " ",
+  "network#caldigit-ts4": {
+    "interface": "caldigit_eth",
+    "format-ethernet": "CalDigit TS4 󰌗 ",
     "format-disconnected": "",
     "tooltip-format-ethernet": "{ipaddr}/{cidr}",
     "max-length": 50,
@@ -188,5 +190,18 @@
     },
     "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates --no-zero-output --interval-seconds 5 --network-interval-seconds 300",
+  },
+  "custom/tailscale": {
+    "exec": "bash ~/.config/waybar/custom_modules/tailscale/tailscale.sh --status",
+    "on-click": "exec ~/.config/waybar/custom_modules/tailscale/tailscale.sh --toggle",
+    "exec-on-event": true,
+    "format": "Tailscale {icon} ",
+    "format-icons": {
+      "connected": "",
+      "stopped": "",
+    },
+    "tooltip": true,
+    "return-type": "json",
+    "interval": 3,
   },
 }

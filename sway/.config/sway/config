@@ -137,9 +137,6 @@ include @sysconfdir@/sway/config.d/*
 # WhatsApp Web
 exec firefoxpwa site launch 01JXMPPW9T49MEQG9ABBPB85N9
 assign [app_id="FFPWA-01JXMPPW9T49MEQG9ABBPB85N9"] 8
-# Slack
-exec slack --ozone-platform-hint=auto
-assign [app_id="Slack"] 8
 # Signal
 exec signal-desktop --ozone-platform-hint=auto
 assign [app_id="signal"] 8
@@ -212,3 +209,12 @@ bindsym $mod+y exec clipman pick --tool=CUSTOM --tool-args="fuzzel -d -w "
 
 exec_always kanshi
 exec_always udiskie
+
+#
+# Clamshell Mode
+#
+# https://github.com/swaywm/sway/wiki#clamshell-mode
+set $laptop eDP-1
+bindswitch --reload --locked lid:on output $laptop disable
+bindswitch --reload --locked lid:off output $laptop enable
+exec_always ~/.config/sway/clamshell.sh

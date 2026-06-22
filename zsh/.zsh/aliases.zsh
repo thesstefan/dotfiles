@@ -1,3 +1,3 @@
-alias ls=exa -a
+alias ls=eza -a
 alias lg=lazygit
 alias cat=bat

@@ -16,16 +16,12 @@ exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 set $WOBSOCK $XDG_RUNTIME_DIR/wob.sock
 
 set $lock swaylock -f
-#
-# exec_always swayidle -w \
-#     timeout 300 '$lock' \
-#     timeout 360 'swaymsg "output * dpms off"' \
-#     resume 'swaymsg "output * dpms on"' \
-#     timeout 600 'systemctl suspend' \
-#     before-sleep '$lock' \
-#     bindswitch --lid 'exec $lock && systemctl suspend' \
-#     lock '$lock'
-#
+
+exec swayidle -w \
+    timeout 300 'swaylock -f -c 000000' \
+    timeout 330 'swaymsg "output * power off"' \
+    resume 'swaymsg "output * power on"'
+
 exec mako
 
 bindsym $mod+Return exec $term -e /home/stefan/.scripts/tmux_start_or_attach.sh

@@ -6,3 +6,6 @@ email = "stefan@stefanache.com"
 
 [ui]
 editor = "nvim"
+
+[aliases]
+tug = ["bookmark", "move", "--from", "heads(::@- & bookmarks())", "--to", "@-"]
